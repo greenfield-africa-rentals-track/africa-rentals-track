@@ -8,7 +8,9 @@ import { InformationComponent } from './commponents/information/information.comp
 import { NavbarComponent } from './commponents/navbar/navbar.component';
 import {MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
-
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +22,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     AppRoutingModule,
     MatButtonModule,
     MatToolbarModule,
+    MatIconModule,
+    MatInputModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
