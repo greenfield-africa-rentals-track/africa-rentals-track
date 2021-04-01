@@ -32,7 +32,6 @@ import { MatSliderModule } from '@angular/material/slider';
     MatToolbarModule,
     MatIconModule,
     MatInputModule,
-    BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
     MatSliderModule,
