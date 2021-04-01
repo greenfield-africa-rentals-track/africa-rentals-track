@@ -2,9 +2,10 @@
   flex: 1 1 auto;
 }
 .mynavbar {
-  margin-top: -0.6em;
   margin-left: -0.8em;
-  width: 76.3em;
+  width: 76.7em;
+  background-color: #184a7c
+  
 }
 
 /* SIGNUP BUTTON*/
@@ -41,7 +42,7 @@ section {
     font-size: 30px;
 }
 .nav-image{
-    width: 95.33em;
+    width: 109.4em;
     height: 400px;
     margin-left: -1em;
 }
@@ -53,4 +54,25 @@ section {
     margin-left: 5em;
     text-shadow: 2px 1px black;
 }
-
+.logo{
+    height: 85px;
+    margin-top: 15px;
+}
+.search-input{
+    margin-left: 37em;
+    margin-top: 3em;
+    width: 28em;
+    height: 3em;
+    border-radius: 11px;
+    opacity: 0.9;
+    border: none;
+    font-size: 15px;
+}
+.search-input:hover{
+    opacity: 1;
+    font-weight: bold;
+}
+.search-icon{
+    opacity: 0.8;
+    margin-left: -3em;
+}
