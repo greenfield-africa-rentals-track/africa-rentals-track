@@ -9,13 +9,19 @@ import {MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CardProductComponent } from './commponents/card-product/card-product.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     InformationComponent,
     
     NavbarComponent,
+    
+    CardProductComponent,
   ],
   imports: [
     BrowserModule,
