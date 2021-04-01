@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/index.js",
+    "data": " node ./database/db.js"
   },
   "author": "Hack Reactor Curriculum Team <curriculum.team@hackreactor.com>",
   "license": "ISC",
@@ -18,13 +19,13 @@
     "axios": "^0.17.1",
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
+    "config": "^3.3.2",
+    "cors": "^2.8.5",
     "express": "^4.15.4",
     "jquery": "^3.2.1",
     "moment": "^2.29.1",
-    "mongoose": "^4.11.6",
-    "underscore": "^1.8.3",
-    "cors": "^2.8.5",
-    "config": "^3.3.2",
-    "nodemon": "^2.0.6"
+    "mongoose": "^4.13.21",
+    "nodemon": "^2.0.6",
+    "underscore": "^1.8.3"
   }
 }
