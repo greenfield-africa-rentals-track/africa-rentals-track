@@ -1,12 +1,9 @@
 @media screen and (min-width: 900px) {
+  .example-spacer {
+    flex: 1 1 auto;
+  }
 .example-spacer {
   flex: 1 1 auto;
-}
-.mat-toolbar-row, .mat-toolbar-single-row {
-  /* margin-left: -0.8em; */
-  width: 100%;
-  background-color: #184a7c
-  
 }
 
 /* SIGNUP BUTTON*/
@@ -47,25 +44,31 @@ section {
   width: 100%;
 }
 .backgbox{
-    max-width:100%;
-    min-width: 100%;
-    max-height: 400px;
-   min-height: 400px;
+  max-width:100%;
+  min-width: 100%;
+  max-height: 400px;
+ min-height: 400px;
 }
+.mat-toolbar-row, .mat-toolbar-single-row {
+  /* margin-left: -0.8em; */
+  width: 100%;
+  background-color: #184A7C
+}
+
 .backg-text{
-    font-size: 50px;
-    margin-top: -6em;
-    color: white;
-    font-family: Helvetica;
-    margin-left: 3em;
-    text-shadow: 2px 1px black;
+  font-size: 50px;
+  margin-top: -6em;
+  color: white;
+  font-family: Helvetica;
+  margin-left: 3em;
+  text-shadow: 2px 1px black;
 }
 .logo{
     height: 85px;
     margin-top: 15px;
 }
 .search-input{
-    margin-left: 37em;
+    margin-left: 33em;
     margin-top: 3em;
     width: 28em;
     height: 3em;
@@ -82,5 +85,4 @@ section {
     opacity: 0.8;
     margin-left: -3em;
 }
-
 }
