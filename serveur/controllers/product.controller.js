@@ -1,4 +1,4 @@
-const myproduct =require('./models/product.js')
+const myproduct =require('../models/product.js')
 
 module.exports.findAll = async function (req, res) {
     try {
