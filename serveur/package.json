@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/index.js",
-    "data": " node ./database/db.js"
+    "data": " nodemon ./database/connection.js"
   },
   "author": "Hack Reactor Curriculum Team <curriculum.team@hackreactor.com>",
   "license": "ISC",
@@ -17,11 +17,14 @@
   "dependencies": {
     "angular": "^1.6.5",
     "axios": "^0.17.1",
+    "bcrypt": "^5.0.1",
+    "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
     "config": "^3.3.2",
     "cors": "^2.8.5",
     "express": "^4.15.4",
+    "joi": "^17.4.0",
     "jquery": "^3.2.1",
     "moment": "^2.29.1",
     "mongoose": "^4.13.21",
