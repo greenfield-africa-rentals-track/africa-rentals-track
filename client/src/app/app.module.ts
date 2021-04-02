@@ -15,14 +15,20 @@ import { CardProductComponent } from './commponents/card-product/card-product.co
 
 
 
+import { ProductComponent } from './commponents/product/product.component'
+import { MatCardModule } from "@angular/material/card";
+import { MatSliderModule } from '@angular/material/slider';
+import {ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     InformationComponent,
-    
     NavbarComponent,
     
     CardProductComponent,
+    ProductComponent,
+    
+   
   ],
   imports: [
     BrowserModule,
@@ -31,8 +37,10 @@ import { CardProductComponent } from './commponents/card-product/card-product.co
     MatToolbarModule,
     MatIconModule,
     MatInputModule,
-    BrowserAnimationsModule,
     MatButtonModule,
+    MatCardModule,
+    MatSliderModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

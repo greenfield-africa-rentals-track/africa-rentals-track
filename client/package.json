@@ -25,6 +25,9 @@
     "angular-bootstrap-md": "^11.0.0",
     "bootstrap": "^4.6.0",
     "jquery": "^3.6.0",
+    "forms-angular": "^0.12.0-beta.136",
+    "moment": "^2.29.1",
+    "ngx-custom-validators": "^11.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
