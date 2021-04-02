@@ -5,12 +5,6 @@
 .example-spacer {
   flex: 1 1 auto;
 }
-.mynavbar {
-  margin-left: -0.8em;
-  width: 76.7em;
-  background-color: #184a7c
-  
-}
 
 /* SIGNUP BUTTON*/
 section {
@@ -60,14 +54,7 @@ section {
   width: 100%;
   background-color: #184A7C
 }
-.backg-text{
-    font-size: 50px;
-    margin-top: -6em;
-    color: white;
-    font-family: Helvetica;
-    margin-left: 5em;
-    text-shadow: 2px 1px black;
-}
+
 .backg-text{
   font-size: 50px;
   margin-top: -6em;
@@ -81,7 +68,7 @@ section {
     margin-top: 15px;
 }
 .search-input{
-    margin-left: 37em;
+    margin-left: 33em;
     margin-top: 3em;
     width: 28em;
     height: 3em;
