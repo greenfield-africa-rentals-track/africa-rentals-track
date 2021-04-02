@@ -15,12 +15,25 @@ import { ProductComponent } from './commponents/product/product.component'
 import { MatCardModule } from "@angular/material/card";
 import { MatSliderModule } from '@angular/material/slider';
 import {ReactiveFormsModule } from '@angular/forms';
+import {RouterModule, Routes} from '@angular/router';
+import { AdminComponent } from './commponents/admin/admin.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+
+const appRoutes: Routes = [
+ 
+];
+ 
+
 @NgModule({
   declarations: [
     AppComponent,
     InformationComponent,
     NavbarComponent,
     ProductComponent,
+    AdminComponent,
+   
+
     
    
   ],
@@ -31,13 +44,20 @@ import {ReactiveFormsModule } from '@angular/forms';
     MatToolbarModule,
     MatIconModule,
     MatInputModule,
-    BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
     MatSliderModule,
     ReactiveFormsModule,
+    RouterModule.forRoot(
+      appRoutes,
+      {enableTracing: true}
+    ),
+    MDBBootstrapModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports:[RouterModule]
 })
-export class AppModule { }
+export class AppModule {
+
+ }

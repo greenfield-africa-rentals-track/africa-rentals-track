@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router, RouterModule, Routes } from '@angular/router';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
   options: string[] = ['Apple', 'Orange', 'Banana']
-
+  functionON() {
+    this.router.navigate(["/info"])
+    
+  }
   ngOnInit(): void {
   }
 

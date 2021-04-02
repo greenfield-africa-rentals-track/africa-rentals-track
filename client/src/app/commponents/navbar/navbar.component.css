@@ -1,9 +1,10 @@
+@media screen and (min-width: 900px) {
 .example-spacer {
   flex: 1 1 auto;
 }
-.mynavbar {
-  margin-left: -0.8em;
-  width: 76.7em;
+.mat-toolbar-row, .mat-toolbar-single-row {
+  /* margin-left: -0.8em; */
+  width: 100%;
   background-color: #184a7c
   
 }
@@ -42,16 +43,21 @@ section {
     font-size: 30px;
 }
 .nav-image{
-    width: 109.4em;
-    height: 400px;
-    margin-left: -1em;
+  height: 400px;
+  width: 100%;
+}
+.backgbox{
+    max-width:100%;
+    min-width: 100%;
+    max-height: 400px;
+   min-height: 400px;
 }
 .backg-text{
     font-size: 50px;
     margin-top: -6em;
     color: white;
     font-family: Helvetica;
-    margin-left: 5em;
+    margin-left: 3em;
     text-shadow: 2px 1px black;
 }
 .logo{
@@ -75,4 +81,6 @@ section {
 .search-icon{
     opacity: 0.8;
     margin-left: -3em;
+}
+
 }
