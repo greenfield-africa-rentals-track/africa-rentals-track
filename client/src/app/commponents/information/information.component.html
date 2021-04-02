@@ -13,10 +13,19 @@
           </div>
           
         </div>
-        <div class="col-md-6" >
-          <input placeholder="hello" />
-  </div>
+        <form [formGroup]="heroForm"  (submit)="submit()">
+          <div class="form-group">
+            <label class="center-block">Date:
+              <input class="form-control" formControlName="date">
+            </label>
+          </div>
+          <p></p>
+          <p >Required Error</p>
+          <p >Date Error</p>
+          <button type="submit">submit</button>
+        </form>
       </div>
      
     </div>
+    
     </div>

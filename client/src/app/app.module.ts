@@ -14,16 +14,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ProductComponent } from './commponents/product/product.component'
 import { MatCardModule } from "@angular/material/card";
 import { MatSliderModule } from '@angular/material/slider';
-
-
+import {ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     InformationComponent,
-    
     NavbarComponent,
-    
     ProductComponent,
+    
+   
   ],
   imports: [
     BrowserModule,
@@ -35,8 +34,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MatButtonModule,
     MatCardModule,
     MatSliderModule,
-   
-   
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
