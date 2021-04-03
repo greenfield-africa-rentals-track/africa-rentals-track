@@ -7,6 +7,9 @@ const adminRoutes = require('./routers/admin');
 const prodrouter=require('./routers/product.router.js')
 const  rantelRoutes = require('./routers/rantel');
 // const db =require('./database/connection.js')
+// const db = require('./database/connection.js')
+
+
 
 const app = express();
 const PORT = 3000;
@@ -16,7 +19,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname+'/../client/dist/client'));
 
 
-mongoose.connect('mongodb://localhost:27017/trucksy');
+mongoose.connect('mongodb://localhost:27017/trucksy')
 
 app.use("",adminRoutes);
 app.use("",rantelRoutes)
