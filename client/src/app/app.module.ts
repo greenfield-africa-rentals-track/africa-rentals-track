@@ -22,6 +22,8 @@ import {ReactiveFormsModule } from '@angular/forms';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 
+import { SignupComponent } from './commponents/signup/signup.component';
+import {FormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +32,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     
     CardProductComponent,
     ProductComponent,
+    SignupComponent,
     
    
   ],
@@ -44,7 +47,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     MatCardModule,
     MatSliderModule,
     ReactiveFormsModule,
-    IvyCarouselModule
+    IvyCarouselModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
