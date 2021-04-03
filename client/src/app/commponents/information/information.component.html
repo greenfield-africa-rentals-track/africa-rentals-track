@@ -1,1 +1,31 @@
-<p>information works!</p>
+
+<div class="card-product">
+    <div class="card mb-8" >
+      <div class="row no-gutters"> 
+        <div class="col-md-4">
+          <img  id="card-image" src="https://www.acea.be/images/made/a7389c2d9c8f6376/commercial-vehicles_800_450_70.jpg" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+          
+        </div>
+        <form [formGroup]="heroForm"  (submit)="submit()">
+          <div class="form-group">
+            <label class="center-block">Date:
+              <input class="form-control" formControlName="date">
+            </label>
+          </div>
+          <p></p>
+          <p >Required Error</p>
+          <p >Date Error</p>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+     
+    </div>
+    
+    </div>
