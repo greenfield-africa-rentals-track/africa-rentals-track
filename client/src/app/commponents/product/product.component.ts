@@ -1,21 +1,29 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
+import {ProductService} from '../../servercis/product.service';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
+  mydata: any;
 
-  constructor(private router:Router) { }
-  options: string[] = ['Apple', 'Orange', 'Banana']
+  constructor(private router:Router ,private pdService:ProductService) { }
+   
   functionON() {
     this.router.navigate(["/info"])
     
   }
-  img: string[]= ['https://www.unitedrentals.com/sites/default/files/styles/square_1_1_414x414/public/category/300/300-0750_0.jpg']
+  getprod(){
+    this.pdService.getProduct().subscribe((data)=>{
+      this.mydata=data
+     
+    })
+  }
 
   ngOnInit(): void {
+    this.getprod()
   }
 
 }
