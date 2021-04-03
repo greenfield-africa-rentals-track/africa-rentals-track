@@ -1,15 +1,17 @@
 <app-card-product></app-card-product>
     <div class="container">
-        <div class="row" *ngFor="let data of mydata">
+        <div class="row" >
             
-          <div class="col-sm">
+          <div class="col-sm" *ngFor="let data of mydata">
               <mat-card class="example-card">
             <mat-card-header>
                 <div mat-card-avatar class="example-header-image"></div>
                 <mat-card-title >{{data.name}}</mat-card-title>
                 <mat-card-subtitle>{{data.type}}</mat-card-subtitle>
+                
               </mat-card-header>
-              <img    mat-card-image src={{data.imageurl}} alt="Photo of a Shiba Inu">
+              <img  (click)="functionON()"  mat-card-image src={{data.imageurl}} alt="Photo of a Shiba Inu">
+              <mat-card-subtitle>{{data.price}}</mat-card-subtitle>
               <mat-card-content>
                 <p>
                  {{data.description}}

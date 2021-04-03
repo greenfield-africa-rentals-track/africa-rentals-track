@@ -7,7 +7,7 @@ import {ProductService} from '../../servercis/product.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  mydata: any;
+  mydata: any=[];
 
   constructor(private router:Router ,private pdService:ProductService) { }
    
@@ -17,7 +17,7 @@ export class ProductComponent implements OnInit {
   }
   getprod(){
     this.pdService.getProduct().subscribe((data)=>{
-      this.mydata=data
+      this.mydata = data
      
     })
   }
