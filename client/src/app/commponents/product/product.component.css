@@ -1,0 +1,7 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.example-card {
+    max-width: 300px;
+    left: 100px;
+    top:300px
+  }
+  
