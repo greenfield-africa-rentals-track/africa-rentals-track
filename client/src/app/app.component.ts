@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router'
  
 
 
@@ -9,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'client';
+  
+  constructor(private router:Router) { }
+  goToPage(pageName:string):void{
+    this.router.navigate(['${pageName}'])
+  }
 }
