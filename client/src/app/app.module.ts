@@ -15,12 +15,15 @@ import { ProductComponent } from './commponents/product/product.component'
 import { MatCardModule } from "@angular/material/card";
 import { MatSliderModule } from '@angular/material/slider';
 import {ReactiveFormsModule } from '@angular/forms';
+import { SignupComponent } from './commponents/signup/signup.component';
+import {FormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
     InformationComponent,
     NavbarComponent,
     ProductComponent,
+    SignupComponent,
     
    
   ],
@@ -35,6 +38,7 @@ import {ReactiveFormsModule } from '@angular/forms';
     MatCardModule,
     MatSliderModule,
     ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
