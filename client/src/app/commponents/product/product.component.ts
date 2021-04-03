@@ -13,6 +13,8 @@ export class ProductComponent implements OnInit {
     this.router.navigate(["/info"])
     
   }
+  img: string[]= ['https://www.unitedrentals.com/sites/default/files/styles/square_1_1_414x414/public/category/300/300-0750_0.jpg']
+
   ngOnInit(): void {
   }
 
