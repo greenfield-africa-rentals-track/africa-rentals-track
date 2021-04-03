@@ -19,6 +19,9 @@ import { ProductComponent } from './commponents/product/product.component'
 import { MatCardModule } from "@angular/material/card";
 import { MatSliderModule } from '@angular/material/slider';
 import {ReactiveFormsModule } from '@angular/forms';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +44,7 @@ import {ReactiveFormsModule } from '@angular/forms';
     MatCardModule,
     MatSliderModule,
     ReactiveFormsModule,
+    IvyCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
