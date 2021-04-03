@@ -5,3 +5,12 @@
 	border: 1.58px solid black;
 }
 
+.myCarousel{
+	/* font-weight: 100px; */
+	height: 1000px;
+	background-color: red;
+	width: 70%;
+};
+ .carousel-cell{
+	width: 500px ! important; 
+}
