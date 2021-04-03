@@ -11,10 +11,17 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CardProductComponent } from './commponents/card-product/card-product.component';
+
+
+
 import { ProductComponent } from './commponents/product/product.component'
 import { MatCardModule } from "@angular/material/card";
 import { MatSliderModule } from '@angular/material/slider';
 import {ReactiveFormsModule } from '@angular/forms';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
+
 import { SignupComponent } from './commponents/signup/signup.component';
 import {FormsModule} from '@angular/forms'
 @NgModule({
@@ -22,6 +29,8 @@ import {FormsModule} from '@angular/forms'
     AppComponent,
     InformationComponent,
     NavbarComponent,
+    
+    CardProductComponent,
     ProductComponent,
     SignupComponent,
     
@@ -38,7 +47,8 @@ import {FormsModule} from '@angular/forms'
     MatCardModule,
     MatSliderModule,
     ReactiveFormsModule,
-    FormsModule,
+    IvyCarouselModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
