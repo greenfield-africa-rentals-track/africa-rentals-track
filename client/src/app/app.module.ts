@@ -23,9 +23,9 @@ const appRoutes: Routes = [
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { SignupComponent } from './commponents/signup/signup.component';
 import {FormsModule} from '@angular/forms';
+
 import { MatCarouselModule } from '@ngmodule/material-carousel';
-
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -56,7 +56,8 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
     ),
     MDBBootstrapModule.forRoot(),
     IvyCarouselModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
