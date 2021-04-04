@@ -20,7 +20,7 @@ import { AdminComponent } from './commponents/admin/admin.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 const appRoutes: Routes = [
 ];
-// import {IvyCarouselModule} from 'angular-responsive-carousel';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { SignupComponent } from './commponents/signup/signup.component';
 import {FormsModule} from '@angular/forms';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
@@ -55,7 +55,7 @@ import { MatCarouselModule } from '@ngmodule/material-carousel';
       {enableTracing: true}
     ),
     MDBBootstrapModule.forRoot(),
-    // IvyCarouselModule,
+    IvyCarouselModule,
     FormsModule
   ],
   providers: [],
