@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 
 
@@ -10,8 +9,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
   styleUrls: ['./card-product.component.css']
 })
 export class CardProductComponent implements OnInit {
-  height = "number";
-  
+ 
+ 
   constructor() { }
 
   ngOnInit(): void {
