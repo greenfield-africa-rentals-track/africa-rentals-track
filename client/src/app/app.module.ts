@@ -29,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
 import { SigninComponent } from './commponents/signin/signin.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,8 @@ import { SigninComponent } from './commponents/signin/signin.component';
     AdminComponent,
     SignupComponent,
     ConetctnavbarComponent,
-    SigninComponent, 
+    SigninComponent
+
   ],
   imports: [
     BrowserModule,
