@@ -28,7 +28,11 @@
     "angular-responsive-carousel": "^2.0.2",
     "animate.css": "^4.1.1",
     "bootstrap": "^4.6.0",
+
     "chart.js": "^2.5.0",
+
+    "font-awesome": "^4.7.0",
+
     "forms-angular": "^0.12.0-beta.136",
     "hammerjs": "^2.0.8",
     "jquery": "^3.6.0",
