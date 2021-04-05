@@ -1,4 +1,4 @@
-
+<app-card-product></app-card-product>
     <div class="container">
         <div class="row">
             
@@ -9,7 +9,7 @@
                 <mat-card-title ></mat-card-title>
                 <mat-card-subtitle>Dog Breed</mat-card-subtitle>
               </mat-card-header>
-              <img mat-card-image src="https://www.unitedrentals.com/sites/default/files/styles/square_1_1_414x414/public/category/904/904-4520_1.jpg" alt="Photo of a Shiba Inu">
+              <img    mat-card-image src="https://www.unitedrentals.com/sites/default/files/styles/square_1_1_414x414/public/category/904/904-4520_1.jpg" alt="Photo of a Shiba Inu">
               <mat-card-content>
                 <p>
                   The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
@@ -29,7 +29,7 @@
                 <mat-card-title>Shiba Inu</mat-card-title>
                 <mat-card-subtitle>Dog Breed</mat-card-subtitle>
               </mat-card-header>
-              <img mat-card-image src="https://www.unitedrentals.com/sites/default/files/styles/square_1_1_414x414/public/category/310/310-4048_0.jpg" alt="Photo of a Shiba Inu">
+              <img (click)="functionON()" mat-card-image src="https://www.unitedrentals.com/sites/default/files/styles/square_1_1_414x414/public/category/310/310-4048_0.jpg" alt="Photo of a Shiba Inu">
               <mat-card-content>
                 <p>
                   The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
@@ -61,9 +61,13 @@
                 </mat-card> 
           </div>
         </div>
-        <!-- <option *ngFor="let option of options" >
+        <!-- <option *ngFor="let option of img" >
             {{option}}
           </option> -->
+          
+            
+          
       </div>
                     
-    
+      
+      
