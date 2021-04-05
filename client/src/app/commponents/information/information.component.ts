@@ -19,11 +19,10 @@ export class InformationComponent implements OnInit {
     });
   }
   submit() {
-    //this.data=this.heroForm.value
-   // console.log(this.data,'mydata')
       this.objectService
       .addinfo(this.heroForm.value)
       .subscribe(object=>{console.log(object,'newobject')})
+      window.location.reload()
     }
   ngOnInit(): void {
   }

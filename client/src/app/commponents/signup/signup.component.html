@@ -1,3 +1,4 @@
+<app-conetctnavbar></app-conetctnavbar>
 <form class="signup-cont" [formGroup]="UserForm" (submit)="signupUser()">
     <h1> SIGNUP NOW</h1> 
     <input class="inp-box" type="text" name="username"  formControlName="firstName" placeholder="First name" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
