@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Pipe, PipeTransform} from '@angular/core'
+import {Pipe, PipeTransform} from '@angular/core';
+import { Router, RouterModule, Routes } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -7,10 +8,15 @@ import {Pipe, PipeTransform} from '@angular/core'
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router:Router) { }
+  rediractto() {
+    this.router.navigate(["/Signup"])
+    
+  }
   ngOnInit(): void {
   }
-
+goToHome(){
+  this.router.navigate([""])
+}
 }
 

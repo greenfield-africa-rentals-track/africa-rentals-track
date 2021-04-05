@@ -10,22 +10,31 @@
             <h5 class="card-title">title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <form [formGroup]="heroForm" >
+              <div class="form-group">
+                <label class="center-block">Start Date
+                  <input class="form-control" formControlName="Startdate">
+                </label>
+                <label class="center-block">End Date
+                  <input class="form-control" formControlName="Enddate">
+                </label>
+                <div class="quantity">
+                  <button  aria-label="Less" tabindex="0"class="quantity-less">-</button>
+                  <input type="tel" id="quantity-input" min="1" max="9999" autocomplete="off" formControlName="quantity"  >
+                  <button aria-label="More" tabindex="0" class="quantity-more">+</button>
+                </div>
+              </div>
+              <p>Form value: {{ heroForm.value | json }}</p>
+
+              <button type="submit" class="mysubmit"  (click)="submit()">submit</button>
+
+            </form>
+          </div>
+         
           </div>
           
         </div>
-        <form [formGroup]="heroForm"  (submit)="submit()">
-          <div class="form-group">
-            <label class="center-block">Date:
-              <input class="form-control" formControlName="date">
-            </label>
-          </div>
-          <p></p>
-          <p >Required Error</p>
-          <p >Date Error</p>
-          <button type="submit">submit</button>
-        </form>
-      </div>
-     
+      
     </div>
     
     </div>

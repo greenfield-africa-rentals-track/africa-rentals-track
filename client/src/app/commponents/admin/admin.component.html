@@ -1,0 +1,13 @@
+<div class="create">
+	<div class="create-editor">
+	  <h2>Add Product</h2>
+	  <form [formGroup]="productForm">
+		<input class="create-input" type="text"  placeholder="NAME" formControlName="name"/>
+		<input class="create-input" type="text"  placeholder="Image URL" formControlName="imageurl"/>
+		<input class="create-input" type="text"  placeholder="price" formControlName="price"/>
+		<input class="create-input" type="text"  placeholder="type" formControlName="type"/>
+		<textarea class="create-body-textarea"  placeholder="description" formControlName="description"></textarea>
+		<button class="create-submit-button" type="submit" (click)="submit()">Save post</button>
+	  </form>
+	</div>
+  </div>
