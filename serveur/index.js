@@ -5,6 +5,9 @@ const  cors =require("cors")
 const config =require("config")
 const adminRoutes = require('./routers/admin');
 const prodrouter=require('./routers/product.router.js')
+const  rantelRoutes = require('./routers/rantel');
+// const db =require('./database/connection.js')
+// const db = require('./database/connection.js')
 
 
 
@@ -16,10 +19,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname+'/../client/dist/client'));
 
 
-mongoose.connect('mongodb://localhost:27017/trucksy');
+mongoose.connect('mongodb://localhost:27017/trucksy')
 
 app.use("",adminRoutes);
-
+app.use("",rantelRoutes)
+app.use("/api",prodrouter)
 //dali
 const AuthUserRouter = require('./routers/auth.user.router.js')
 app.use("/api/trucksy", AuthUserRouter)

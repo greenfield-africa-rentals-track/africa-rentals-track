@@ -1,17 +1,18 @@
 const myproduct =require('../models/product.js')
 
-module.exports.findAll = async function (req, res) {
+module.exports={
+  findAll :async function (req, res) {
     try {
       const products = await myproduct.find({});
       res.send(products);
     } catch (error) {
       res.send(error);
     }
-  };
+  },
   //dhia
 
 
-  const createProduct = async (req, res) => {
+createProduct :async (req, res) => {
     const newprod = new myproduct({
         name: req.body.name,
         imageurl: req.body.imageurl,
@@ -28,5 +29,5 @@ module.exports.findAll = async function (req, res) {
     }
 }
 
+}
 
-module.exports.createProduct = createProduct
