@@ -26,6 +26,17 @@ module.exports={
             }else{res.status(200).send(results)
             }
         })
+    },
+
+    update:(req,res)=>{
+        product.update({_id:  req.params.id},(err,results)=>{
+            if(err){
+                res.send(err)
+            }else{res.status(200).send(results)
+            }
+        })
+
     }
 
 }
+
