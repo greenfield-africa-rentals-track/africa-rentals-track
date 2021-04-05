@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "~11.2.7",
     "@angular/router": "~11.2.7",
     "@blueprintjs/core": "^3.42.0",
-    "@ngmodule/material-carousel": "^0.6.0",
+
     "angular-bootstrap-md": "^11.0.0",
     "angular-responsive-carousel": "^2.0.2",
     "bootstrap": "^4.6.0",
