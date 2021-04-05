@@ -69,5 +69,7 @@
     padding: 1px 6px;
     /* cursor: pointer; */
   }
- 
+ .block{
+   margin-left: 220px;
+ }
 }
