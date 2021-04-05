@@ -18,6 +18,7 @@ import {ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { AdminComponent } from './commponents/admin/admin.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { HttpClientModule } from '@angular/common/http';
 const appRoutes: Routes = [
 ];
 import {IvyCarouselModule} from 'angular-responsive-carousel';
@@ -55,7 +56,9 @@ import { HttpClientModule } from '@angular/common/http';
     MDBBootstrapModule.forRoot(),
     IvyCarouselModule,
     FormsModule,
-    HttpClientModule
+
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
