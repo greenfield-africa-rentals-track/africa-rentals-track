@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
-import {ProductService} from '../../servercis/product.service';
+import {ProductService} from '../../servises/product.service';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -18,6 +18,7 @@ export class ProductComponent implements OnInit {
   getprod(){
     this.pdService.getProduct().subscribe((data)=>{
       this.mydata = data
+      console.log(data,"pxamachekl")
      
     })
   }
