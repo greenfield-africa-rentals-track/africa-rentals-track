@@ -27,6 +27,7 @@ import {FormsModule} from '@angular/forms'
 
 import { HttpClientModule } from '@angular/common/http';
 import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
+import { SigninComponent } from './commponents/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavba
     ProductComponent,
     AdminComponent,
     SignupComponent,
-    ConetctnavbarComponent, 
+    ConetctnavbarComponent,
+    SigninComponent, 
   ],
   imports: [
     BrowserModule,
