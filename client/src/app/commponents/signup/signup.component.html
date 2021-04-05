@@ -1,9 +1,29 @@
-<form class="signup-cont" #simpleForm="ngForm">
+<app-conetctnavbar></app-conetctnavbar>
+<form class="signup-cont" [formGroup]="UserForm" (submit)="signupUser()">
     <h1> SIGNUP NOW</h1> 
-    <input class="inp-box" type="text" name="username"  placeholder="First name">
-    <input class="inp-box" type="text" name="lastname"  placeholder="Last name">
-    <input class="inp-box" type="text" name="email"  placeholder="Email">
-    <input class="inp-box" type="text" name="password"  placeholder="Password">
-    <input class="inp-box" type=text name="phonenumber"  placeholder="Phone Number">
-    <button class="signup-bott"> SIGNUP </button>
+    <input class="inp-box" type="text" name="username"  formControlName="firstName" placeholder="First name" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
+    <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+        <div *ngIf="f.firstName.errors.required">First Name is required</div>
+    </div>
+    <input class="inp-box" type="text" name="lastname"  formControlName="lastName" placeholder="Last name" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }">
+    <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+        <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+    </div>
+    <input class="inp-box" type="text" name="email"  formControlName="email" placeholder="Email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.email.errors.required">Email is required</div>
+        <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+    </div>
+    <input class="inp-box" type="password" name="password"  formControlName="password" placeholder="Password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors.required">Password is required</div>
+        <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+    </div>
+    <input class="inp-box" type=number name="phonenumber"  formControlName="phoneNumber" placeholder="Phone Number" [ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }">
+    <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+        <div *ngIf="f.phoneNumber.errors.required">Phone Number is required</div>
+        <div *ngIf="f.phoneNumber.errors.minlength">Phone number must be at least 8 characters</div>
+    </div>
+    <button class="signup-bott" (click)="redirectsignin()"> SIGNUP </button>
+  
 </form>

@@ -1,6 +1,6 @@
  <mat-toolbar color="primary" class="mynavbar" content="width=device-width, initial-scale=1.0">
       <mat-toolbar-row >
-        <img  src="../../../assets/output.png" class="logo">
+        <img  src="../../../assets/output.png" class="logo" (click)="goToHome()">
         <span class="example-spacer"></span>
         <button (click)="rediractto()" mat-raised-button color="warn">SIGNUP</button>
       </mat-toolbar-row>
@@ -13,8 +13,8 @@
         <img src="../../../assets/baseline_search_black_18dp.png" class="search-icon">
       </div>
   
-
-
+<app-card-product></app-card-product>
+<app-product></app-product>
 
   
   
