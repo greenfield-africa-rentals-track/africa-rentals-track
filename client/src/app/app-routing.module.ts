@@ -5,10 +5,14 @@ import { InformationComponent } from './commponents/information/information.comp
 import { AppComponent } from './app.component';
 import { ProductComponent } from './commponents/product/product.component';
 import { SignupComponent } from './commponents/signup/signup.component';
+import { AdminComponent } from './commponents/admin/admin.component';
+
 
 const routes: Routes = [
   {path:"oo",component:ProductComponent},
   {path:"info",component:InformationComponent},
+  {path:"admin",component:AdminComponent},
+
   {path:"Signup",component:SignupComponent}
 
 ];
