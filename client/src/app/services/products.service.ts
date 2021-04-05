@@ -7,6 +7,6 @@ export class ProductsService {
 
   constructor(private http:HttpClient) { }
   addProduct(object:Object){
-    return this.http.post("http://localhost:3000/api/createproducts",object)
+    return this.http.post("http://localhost:3000/api/trucksy/products",object)
   }
 }

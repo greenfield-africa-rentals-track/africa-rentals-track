@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router, RouterModule, Routes } from '@angular/router';
 
 
 
@@ -20,8 +20,11 @@ export class CardProductComponent implements OnInit {
    {name: 'Scissor Lifts', image:'https://cdn.shopify.com/s/files/1/0085/2593/8767/products/26322_1024x1024@2x.jpg?v=1610605728' },
    {name: 'Scissor Lifts', image:'https://cdn.shopify.com/s/files/1/0085/2593/8767/products/26322_1024x1024@2x.jpg?v=1610605728' },
  ];
-  constructor() { }
-
+  constructor( private router:Router ) { }
+  functionON() {
+    this.router.navigate(["/info"])
+    
+  }
   ngOnInit(): void {
   }
 
