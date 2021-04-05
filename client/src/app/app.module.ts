@@ -37,7 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
     CardProductComponent,
     ProductComponent,
     AdminComponent,
-    SignupComponent,
+    SignupComponent
      
   ],
   imports: [
