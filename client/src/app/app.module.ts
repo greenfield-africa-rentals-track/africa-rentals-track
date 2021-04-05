@@ -26,6 +26,8 @@ import { SignupComponent } from './commponents/signup/signup.component';
 import {FormsModule} from '@angular/forms'
 
 import { HttpClientModule } from '@angular/common/http';
+import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
+import { SigninComponent } from './commponents/signin/signin.component';
 
 
 @NgModule({
@@ -33,12 +35,14 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     InformationComponent,
     NavbarComponent,
-    
+    ConetctnavbarComponent,
     CardProductComponent,
     ProductComponent,
     AdminComponent,
-    SignupComponent
-     
+    SignupComponent,
+    ConetctnavbarComponent,
+    SigninComponent
+
   ],
   imports: [
     BrowserModule,
