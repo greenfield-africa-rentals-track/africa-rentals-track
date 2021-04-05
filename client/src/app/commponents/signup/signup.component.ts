@@ -11,8 +11,5 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  getMessage(){
-  console.log("My new message");
-  
-}
+ 
 }

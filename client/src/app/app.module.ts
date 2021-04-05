@@ -22,9 +22,8 @@ const appRoutes: Routes = [
 ];
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { SignupComponent } from './commponents/signup/signup.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule} from '@angular/forms'
 
-import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -49,7 +48,6 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatSliderModule,
     ReactiveFormsModule,
-    MatCarouselModule.forRoot(),
     RouterModule.forRoot(
       appRoutes,
       {enableTracing: true}
