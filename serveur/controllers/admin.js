@@ -1,4 +1,6 @@
 const Admin = require('../models/admin');
+const product=require('../models/product');
+const db = require('../database/db');
 module.exports={
     get:(req,res)=>{
         Admin.find({},(err,doc)=>{
@@ -16,7 +18,9 @@ module.exports={
            })
     },
     delete:(req,res)=>{
-        myAdmin.remove({ _id :req.body.id},(err,results)=>{
+        console.log("delete", req.params.id)
+        
+        product.remove({_id:  req.params.id},(err,results)=>{
             if(err){
                 res.send(err)
             }else{res.status(200).send(results)
