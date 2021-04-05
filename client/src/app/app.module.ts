@@ -23,7 +23,7 @@ const appRoutes: Routes = [
 ];
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { SignupComponent } from './commponents/signup/signup.component';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
