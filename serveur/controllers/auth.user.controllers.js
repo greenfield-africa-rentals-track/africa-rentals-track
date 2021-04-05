@@ -20,6 +20,7 @@ const createUser = async (req, res) => {
     try {
         const saveUser = await newUser.save();
         res.send(saveUser);
+        console.log("success");
     }catch(err){
         res.send(err)
     }

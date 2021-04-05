@@ -9,7 +9,7 @@ import { AdminComponent } from './commponents/admin/admin.component';
 import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
 import { NavbarComponent } from './commponents/navbar/navbar.component';
 import { CardProductComponent } from './commponents/card-product/card-product.component';
-
+import {SigninComponent } from './commponents/signin/signin.component'
 
 const routes: Routes = [
   {path:"",component:NavbarComponent},
@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:"admin",component:AdminComponent},
 
   {path:"Signup",component:SignupComponent},
-
+  {path:"signin",component:SigninComponent},
 ];
 
 @NgModule({
