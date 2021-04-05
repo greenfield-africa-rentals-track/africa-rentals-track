@@ -26,17 +26,19 @@ import { SignupComponent } from './commponents/signup/signup.component';
 import {FormsModule} from '@angular/forms'
 
 import { HttpClientModule } from '@angular/common/http';
+import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InformationComponent,
     NavbarComponent,
-    
+    ConetctnavbarComponent,
     CardProductComponent,
     ProductComponent,
     AdminComponent,
-    SignupComponent, 
+    SignupComponent,
+    ConetctnavbarComponent, 
   ],
   imports: [
     BrowserModule,

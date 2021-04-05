@@ -6,14 +6,17 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './commponents/product/product.component';
 import { SignupComponent } from './commponents/signup/signup.component';
 import { AdminComponent } from './commponents/admin/admin.component';
+import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
+import { NavbarComponent } from './commponents/navbar/navbar.component';
+import { CardProductComponent } from './commponents/card-product/card-product.component';
 
 
 const routes: Routes = [
-  {path:"",component:ProductComponent},
+  {path:"",component:NavbarComponent},
   {path:"info",component:InformationComponent},
   {path:"admin",component:AdminComponent},
 
-  {path:"Signup",component:SignupComponent}
+  {path:"Signup",component:SignupComponent},
 
 ];
 
