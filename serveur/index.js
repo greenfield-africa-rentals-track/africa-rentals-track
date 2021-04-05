@@ -23,6 +23,7 @@ mongoose.connect('mongodb://localhost:27017/trucksy')
 
 app.use("",adminRoutes);
 app.use("",rantelRoutes)
+app.use("/api",prodrouter)
 //dali
 const AuthUserRouter = require('./routers/auth.user.router.js')
 app.use("/api/trucksy", AuthUserRouter)
