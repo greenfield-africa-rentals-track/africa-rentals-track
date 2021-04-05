@@ -18,10 +18,11 @@
         <div *ngIf="f.password.errors.required">Password is required</div>
         <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
     </div>
-    <input class="inp-box" type=text name="phonenumber"  formControlName="phoneNumber" placeholder="Phone Number" [ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }">
+    <input class="inp-box" type=number name="phonenumber"  formControlName="phoneNumber" placeholder="Phone Number" [ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }">
     <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
         <div *ngIf="f.phoneNumber.errors.required">Phone Number is required</div>
+        <div *ngIf="f.phoneNumber.errors.minlength">Phone number must be at least 8 characters</div>
     </div>
-    <button class="signup-bott"> SIGNUP </button>
+    <button class="signup-bott" (click)="redirectsignin()"> SIGNUP </button>
   
 </form>
