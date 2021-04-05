@@ -18,7 +18,7 @@ import {ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { AdminComponent } from './commponents/admin/admin.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { HttpClientModule } from '@angular/common/http';
+
 const appRoutes: Routes = [
 ];
 import {IvyCarouselModule} from 'angular-responsive-carousel';
@@ -26,17 +26,21 @@ import { SignupComponent } from './commponents/signup/signup.component';
 import {FormsModule} from '@angular/forms'
 
 import { HttpClientModule } from '@angular/common/http';
+import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
+import { SigninComponent } from './commponents/signin/signin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InformationComponent,
     NavbarComponent,
-    
+    ConetctnavbarComponent,
     CardProductComponent,
     ProductComponent,
     AdminComponent,
-    SignupComponent, 
+    SignupComponent,
+    ConetctnavbarComponent,
+    SigninComponent, 
   ],
   imports: [
     BrowserModule,
