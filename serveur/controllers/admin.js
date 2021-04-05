@@ -14,5 +14,14 @@ module.exports={
                    res.status(200).send(doc)
                }
            })
+    },
+    delete:(req,res)=>{
+        myAdmin.remove({ _id :req.body.id},(err,results)=>{
+            if(err){
+                res.send(err)
+            }else{res.status(200).send(results)
+            }
+        })
     }
+
 }
