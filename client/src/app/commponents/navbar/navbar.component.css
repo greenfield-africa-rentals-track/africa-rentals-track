@@ -35,19 +35,23 @@ section {
 }
 .mat-raised-button.mat-warn {
   background-color: #0066cc;
+  
 }
 .warn:hover{
     font-size: 30px;
 }
 .nav-image{
-  height: 400px;
+  height: 300px;
   width: 100%;
+  margin-top: -1.1%;
 }
+
 .backgbox{
   max-width:100%;
   min-width: 100%;
   max-height: 400px;
  min-height: 400px;
+
 }
 .mat-toolbar-row, .mat-toolbar-single-row {
   /* margin-left: -0.8em; */
@@ -57,7 +61,7 @@ section {
 
 .backg-text{
   font-size: 50px;
-  margin-top: -6em;
+  margin-top: -8%;
   color: white;
   font-family: Helvetica;
   text-align: center;
@@ -65,10 +69,11 @@ section {
   
 }
 .logo{
-    height: 85px;
-    margin-top: 15px;
+    height: 50px;
+    width: 80px;
+    
 }
-.search-input{
+/* .search-input{
     margin-left: 33em;
     margin-top: 3em;
     width: 28em;
@@ -85,5 +90,71 @@ section {
 .search-icon{
     opacity: 0.8;
     margin-left: -3em;
+} */
 }
+
+body {
+  font-family: Arial;
+ 
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  background: #f1f1f1;
+   margin-top: -50%;
+   z-index:999;
+   position:relative;
+   width: 135%;
+   margin-left: -20%;
+   height: 50px;
+ 
+}
+
+form.example button {
+  float: right;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  margin-top: -50%; 
+  z-index:999;
+  position:relative;
+  width: 25%;
+  margin-right: -40%;
+  height: 50px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.nav-item{
+  font-size: 18px;
+  margin-right: 380%;
+  float: right;
+}
+.navbar{
+  height: 4%;
+  background-color: #024b6c;
+}
+
+.nav-link{
+  color: white;
+ 
 }
