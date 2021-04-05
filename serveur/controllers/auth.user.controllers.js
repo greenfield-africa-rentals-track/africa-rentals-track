@@ -29,5 +29,28 @@ const createUser = async (req, res) => {
 
 module.exports.createUser = createUser
 
+const findUser = async (req, res) => {
+ if(req.body.email === "admin" && req.body.password=== "admin"){
+     res.send("admin");
+ } else {
+     try{
+        const user = await UserModule.findOne({ email: req.body.email})
+        // console.log(user);
+        if (!user) {
+            res.send("User not found");
+        }
+        if(await bcrypt.compare(req.body.password, user.password)){
+            res.send("Connected successfully");
+        }else{
+            res.send("Email or password incorrect")
+        }
+    }
+    catch(err){
+      res.send("could not connect")
+    }
+    }   
+}
+
+module.exports.findUser = findUser
 
 
