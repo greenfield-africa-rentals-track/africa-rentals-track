@@ -18,8 +18,8 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname+'/../client/dist/client'));
 
-
-// mongoose.connect('mongodb://localhost:27017/trucksy')
+// mongoose.connect("mongodb+srv://dhia:123456@trucksy.foidx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+mongoose.connect('mongodb://localhost:27017/trucksy');
 // const MongoClient = require('mongodb').MongoClient;
 // const uri = "mongodb+srv://dhia:123456@trucksy.foidx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 // const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
