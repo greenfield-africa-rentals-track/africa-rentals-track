@@ -21,7 +21,7 @@ export class SigninComponent implements OnInit {
     if(value.email !== "admin" && value.password !=="admin"){
       console.log(this.userForm);
       this.userService.signinUser(this.userForm.value).subscribe((data) => {localStorage.setItem('user', Object.values(data)[1])
-      this.router.navigate([""])
+      this.router.navigate(["/profil"])
       })
     }else{
       console.log(this.userForm.value);

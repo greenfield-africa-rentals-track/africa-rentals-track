@@ -26,11 +26,13 @@ import { SignupComponent } from './commponents/signup/signup.component';
 import {FormsModule} from '@angular/forms'
 
 import { HttpClientModule } from '@angular/common/http';
-import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
+import { ConetctnavbarComponent } from './commponents/conectnavbar/conetctnavbar.component';
 import { SigninComponent } from './commponents/signin/signin.component';
 import { SearchComponent } from './search/search.component';
 import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.component';
 import { NavbarhomeconectComponent } from './commponents/navbarhomeconect/navbarhomeconect.component';
+import { NavbaruserconectComponent } from './commponents/navbaruserconect/navbaruserconect.component';
+import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { NavbarhomeconectComponent } from './commponents/navbarhomeconect/navbar
     SearchComponent, 
     SigninComponent,
      LogoutnavbarComponent,
-     NavbarhomeconectComponent
+     NavbarhomeconectComponent,
+     NavbaruserconectComponent,
+     NavbarinfoComponent
 
   ],
   imports: [
