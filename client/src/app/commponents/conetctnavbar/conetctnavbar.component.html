@@ -1,8 +1,39 @@
-<mat-toolbar color="primary" class="mynavbar" content="width=device-width, initial-scale=1.0">
+<!-- <mat-toolbar color="primary" class="mynavbar" content="width=device-width, initial-scale=1.0">
     <mat-toolbar-row >
       <img  src="../../../assets/output.png" class="logo" (click)="goToHome()">
       <span class="example-spacer"></span>
       <button (click)="rediractto()" mat-raised-button color="warn">SIGN IN</button>
     </mat-toolbar-row>
   </mat-toolbar>
- 
+  -->
+
+  <mdb-navbar  SideClass="navbar navbar-expand-lg navbar-dark " [containerInside]="false" >
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><img  src="../../../assets/output.png" class="img-fluid" type="button" (click)="goToHome()"><a class="navbar-brand" href="#"> </a></mdb-navbar-brand>
+  
+    <!-- Collapsible content -->
+    <links>
+  
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link link1 waves-light" mdbWavesEffect (click)="goToHome()"> <b><u>Home</u></b><span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link link2 waves-light" mdbWavesEffect routerLink="/Signup" (click)="rediractto()"><b><u>Sign up</u></b> </a>
+        </li>
+  
+        <!-- Dropdown -->
+        <li class="nav-item">
+          <a class="nav-link link3 waves-light" mdbWavesEffect routerLink="/signin"><b><u>Sign in</u></b></a>
+        </li>
+  
+      </ul>
+      
+      <!-- Links -->
+    </links>
+    <!-- Collapsible content -->
+  
+    
+  </mdb-navbar>
