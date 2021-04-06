@@ -32,6 +32,7 @@ import { SearchComponent } from './search/search.component';
 import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,7 @@ import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.c
     ConetctnavbarComponent,
     SearchComponent, 
     SigninComponent,
-     LogoutnavbarComponent
+    LogoutnavbarComponent
 
   ],
   imports: [
@@ -66,8 +67,9 @@ import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.c
     MDBBootstrapModule.forRoot(),
     IvyCarouselModule,
     FormsModule,
-
+    
     HttpClientModule,
+    
 
   ],
   providers: [],
