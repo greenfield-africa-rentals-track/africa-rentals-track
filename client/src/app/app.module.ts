@@ -36,6 +36,7 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
 import { UsersinfoComponent } from './commponents/usersinfo/usersinfo.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,8 +75,9 @@ import { UsersinfoComponent } from './commponents/usersinfo/usersinfo.component'
     MDBBootstrapModule.forRoot(),
     IvyCarouselModule,
     FormsModule,
-
+    
     HttpClientModule,
+    
 
   ],
   providers: [],
