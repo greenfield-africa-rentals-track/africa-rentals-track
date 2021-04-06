@@ -28,7 +28,7 @@ export class SigninComponent implements OnInit {
       
       // console.log("email",value.email, "pass", value.password);
       this.userService.signinUser(this.userForm.value).subscribe((data) => {localStorage.setItem('admin', Object.values(data)[1])})
-      this.router.navigate(["/admin"])
+      setTimeout(() => {this.router.navigate(["/admin"])}, 1000)
       
       
       // console.log("admin")

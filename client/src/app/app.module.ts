@@ -30,6 +30,7 @@ import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavba
 import { SigninComponent } from './commponents/signin/signin.component';
 import { SearchComponent } from './search/search.component';
 import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.component';
+import { NavbarhomeconectComponent } from './commponents/navbarhomeconect/navbarhomeconect.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.c
     ConetctnavbarComponent,
     SearchComponent, 
     SigninComponent,
-     LogoutnavbarComponent
+     LogoutnavbarComponent,
+     NavbarhomeconectComponent
 
   ],
   imports: [
