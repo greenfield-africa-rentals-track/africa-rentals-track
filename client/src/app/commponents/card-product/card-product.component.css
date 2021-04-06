@@ -1,16 +1,21 @@
+@media screen and (min-width: 900px) {
 .card{
-    margin-top: 1%;
+    /* margin-top: -10%;
 	/* margin-bottom: 1%; */
-	margin-left: 2%;
-	border: 1.60px solid black;
+	/* margin-left: 2%; */ 
+	border: 1.5px solid grey;
 	
 }
 
-/* .myCarousel{
-	height: 600px !important;
-	width:100% !important;
-}
+ .myCarousel{
+	/* height: 600px !important;
+	width:100% !important; */
+	margin-top: 10%;
+	margin-left: 0.5%;
+	padding-left: 3%;
 
+}
+/*
 .carousel-cell{
 	height: 600px !important;
 	width:600px !important;
@@ -23,3 +28,4 @@
 }
 
  */
+}
