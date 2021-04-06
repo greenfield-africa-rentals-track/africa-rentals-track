@@ -15,7 +15,6 @@ const routes: Routes = [
   {path:"",component:NavbarComponent},
   {path:"info",component:InformationComponent},
   {path:"admin",component:AdminComponent},
-
   {path:"Signup",component:SignupComponent},
   {path:"signin",component:SigninComponent},
 ];

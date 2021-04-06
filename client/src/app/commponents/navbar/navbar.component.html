@@ -1,21 +1,40 @@
- <mat-toolbar color="primary" class="mynavbar" content="width=device-width, initial-scale=1.0">
-      <mat-toolbar-row >
-        <img  src="../../../assets/output.png" class="logo" (click)="goToHome()">
-        <span class="example-spacer"></span>
-        <button (click)="rediractto()" mat-raised-button color="warn">SIGNUP</button>
-      </mat-toolbar-row>
-    </mat-toolbar>
-    <div class="backgbox">
+
+<div class="mynav">
+
+<!--Navbar-->
+<mdb-navbar  SideClass="navbar navbar-expand-lg navbar-dark " [containerInside]="false" >
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><img  src="../../../assets/output.png" class="img-fluid" type="button" (click)="goToHome()"><a class="navbar-brand" href="#"> </a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link link1 waves-light" mdbWavesEffect (click)="goToHome()"> <b><u>Home</u></b><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link link2 waves-light" mdbWavesEffect routerLink="/Signup" (click)="rediractto()"><b><u>Sign up</u></b> </a>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link link3 waves-light" mdbWavesEffect routerLink="/signin"><b><u>Sign in</u></b></a>
+      </li>
+
+    </ul>
     
-        <img src="https://s3-us-west-1.amazonaws.com/acropolis-wp-content-uploads/2018/04/banner_1_aerial_desktop1.jpg" class="nav-image">
-        <p class="backg-text">The Nation's Largest Equipment Rental Network</p>    
-        <input placeholder="FIND EQUIPMENT" class="search-input"/>
-        <img src="../../../assets/baseline_search_black_18dp.png" class="search-icon">
-      </div>
-  
-<app-card-product></app-card-product>
-<app-product></app-product>
+    <!-- Links -->
+  </links>
+  <!-- Collapsible content -->
 
   
-  
-  
+</mdb-navbar>
+<!--/.Navbar--> 
+<app-search></app-search>
+
+
+</div>
+<app-card-product></app-card-product>

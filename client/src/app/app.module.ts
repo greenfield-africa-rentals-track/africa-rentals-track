@@ -28,6 +28,9 @@ import {FormsModule} from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
 import { SigninComponent } from './commponents/signin/signin.component';
+import { SearchComponent } from './search/search.component';
+import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { SigninComponent } from './commponents/signin/signin.component';
     AdminComponent,
     SignupComponent,
     ConetctnavbarComponent,
-    SigninComponent, 
+    SearchComponent, 
+    SigninComponent,
+     LogoutnavbarComponent
+
   ],
   imports: [
     BrowserModule,
