@@ -8,9 +8,7 @@ body {
   font-size: 1.1em;
 }
 
-h2 {
-  color: hsla(0, 0%, 0%, 0.829);
-}
+
 
 
 .feed-list-item-title {
@@ -40,13 +38,18 @@ button {
   border-radius: 3px;
   font-family: 'PT Serif', sans-serif;
   color: #ECF0F1;
-  background-color: #0408dd;
+  background-color: green;
+  width: 100%;
+  padding: 10px;
 }
 
 
 .create h2 {
   width: 90%;
   font-family: 'Francois One';
+  color:#1c8adb;
+  text-align: center;
+  font-size: 22px;
 }
 
 .create-editor {
@@ -63,6 +66,7 @@ button {
   margin-bottom: 15px;
   border: groove;
   padding: 5px;
+  border-radius: 3px;
 }
 
 .create-body-textarea {
