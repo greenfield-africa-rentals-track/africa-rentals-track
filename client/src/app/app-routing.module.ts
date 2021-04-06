@@ -12,7 +12,7 @@ import { CardProductComponent } from './commponents/card-product/card-product.co
 import {SigninComponent } from './commponents/signin/signin.component'
 
 const routes: Routes = [
-  {path:"",component:CardProductComponent},
+  {path:"",component:NavbarComponent},
   {path:"info",component:InformationComponent},
   {path:"admin",component:AdminComponent},
   {path:"Signup",component:SignupComponent},

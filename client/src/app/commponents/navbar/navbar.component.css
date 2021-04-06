@@ -114,13 +114,13 @@
   
 } 
 .link1{
-  margin-left: -60%;
+  cursor: pointer;
+  /* margin-left: -60%; */
 
 }
-.link2{
-  margin-left: -30%;
-}
-.link3{
-  margin-left: -10%;
+
+.mynav{
+  background-image: url("../../../assets/banner.jpg");
+  background-attachment: cover;
 }
 }
