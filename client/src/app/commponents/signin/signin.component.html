@@ -1,5 +1,4 @@
-
-    <app-conetctnavbar></app-conetctnavbar>
+<app-conetctnavbar></app-conetctnavbar>
 <form class="signin-cont" [formGroup]="userForm" (submit)="signinUser()">
     <h1>SIGN IN</h1>
     <input type='text' name="email" formControlName="email" placeholder='Email' class="inp-box" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
@@ -12,7 +11,7 @@
         <div *ngIf="f.password.errors.required">Phone Number is required</div>
         <div *ngIf="f.password.errors.minlength">Phone number must be at least 8 characters</div>
     </div>
-    <button class="signin-bott">SIGN IN</button>
+    <button class="signin-bott" >SIGN IN</button>
 </form>
 
 

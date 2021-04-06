@@ -23,13 +23,17 @@ export class SigninComponent implements OnInit {
       this.submitted = true;
       console.log(this.userForm);
       this.userService.signinUser(this.userForm.value).subscribe((data) => {localStorage.setItem('user', Object.values(data)[1])
-      this.router.navigate([""])
+      this.router.navigate(["/profil"])
       })
     }else{
       this.submitted = true;
       console.log(this.userForm.value);
       this.userService.signinUser(this.userForm.value).subscribe((data) => {localStorage.setItem('admin', Object.values(data)[1])})
-      this.router.navigate(["/admin"]) 
+      setTimeout(() => {this.router.navigate(["/admin"])}, 1000)
+      
+      
+      // console.log("admin")
+      // localStorage.setItem('admin', Object.values(data)[1])
     }
   }
   
