@@ -25,14 +25,8 @@ export class SigninComponent implements OnInit {
       })
     }else{
       console.log(this.userForm.value);
-      
-      // console.log("email",value.email, "pass", value.password);
       this.userService.signinUser(this.userForm.value).subscribe((data) => {localStorage.setItem('admin', Object.values(data)[1])})
-      this.router.navigate(["/admin"])
-      
-      
-      // console.log("admin")
-      // localStorage.setItem('admin', Object.values(data)[1])
+      this.router.navigate(["/admin"]) 
     }
   }
   
