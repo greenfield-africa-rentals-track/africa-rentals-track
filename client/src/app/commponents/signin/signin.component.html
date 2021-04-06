@@ -1,6 +1,6 @@
-<form class="signin-cont">
+<form class="signin-cont" [formGroup]="userForm" (submit)="signinUser()">
     <h1>SIGN IN</h1>
-    <input type='text' placeholder='Email' class="inp-box">
-    <input type='password' placeholder='Password' class="inp-box">
+    <input type='text' name="email" formControlName="email" placeholder='Email' class="inp-box">
+    <input type='password' name="password" formControlName="password" placeholder='Password' class="inp-box">
     <button class="signin-bott">SIGN IN</button>
 </form>
