@@ -69,6 +69,7 @@ form.example::after {
     margin-top: 15%;
     margin-left: 40%;
     margin: auto;
+    
 }
 .backg-text{
     font-size: 31px;
@@ -79,5 +80,6 @@ form.example::after {
     text-align: center;
     text-shadow: 2px 1px black; 
     }
+    
 
     

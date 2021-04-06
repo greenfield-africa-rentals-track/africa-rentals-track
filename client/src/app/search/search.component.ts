@@ -27,10 +27,6 @@ export class SearchComponent implements OnInit {
     
    var xx= this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
    console.log("xxx",xx,this.searchedString )
-   
-      
-   
- 
  }
 
   ngOnInit(): void {
