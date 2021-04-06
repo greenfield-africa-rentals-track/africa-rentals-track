@@ -28,7 +28,7 @@
 .signup-bott{
     color: #fff;
     width: 30%;
-    margin-left:35.5%;
+    margin-left:36%;
     padding: 15px;
     border-radius: 20px;
     font-size: 15px;
@@ -43,4 +43,13 @@
 
     width : 100%;
     height: auto;
+}
+
+.fas{
+    margin-right: 1%;
+}
+h1{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Kiwi Maru', serif;
 }
