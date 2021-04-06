@@ -53,3 +53,13 @@ h1{
     font-size: 22px;
     font-family: 'Kiwi Maru', serif;
 }
+h2{
+    background-color:white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Kiwi Maru', serif;
+    margin-bottom: -30%;
+    color: grey;
+   
+    
+}
