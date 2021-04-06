@@ -11,6 +11,10 @@ export class LogoutnavbarComponent implements OnInit {
 
   goToHome(){
     this.router.navigate([""])
+    
+  }
+  goToHom(){
+    this.router.navigate(["/conect"])
   }
   ngOnInit(): void {
   }
