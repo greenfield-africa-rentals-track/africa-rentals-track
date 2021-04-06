@@ -33,6 +33,7 @@ import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.c
 import { NavbarhomeconectComponent } from './commponents/navbarhomeconect/navbarhomeconect.component';
 import { NavbaruserconectComponent } from './commponents/navbaruserconect/navbaruserconect.component';
 import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.component';
+import { UsersinfoComponent } from './commponents/usersinfo/usersinfo.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
      LogoutnavbarComponent,
      NavbarhomeconectComponent,
      NavbaruserconectComponent,
-     NavbarinfoComponent
+     NavbarinfoComponent,
+     UsersinfoComponent
 
   ],
   imports: [
