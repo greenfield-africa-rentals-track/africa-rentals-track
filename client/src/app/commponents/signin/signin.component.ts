@@ -12,18 +12,21 @@ import { Router, RouterModule, Routes  } from '@angular/router';
 export class SigninComponent implements OnInit {
   userForm= this.myform.group({
     email:["", Validators.required],
-    password:["", [Validators.required, Validators.minLength(6)]]
+    password:["", Validators.required]
   })
+  submitted = false;
   constructor(private userService: UsersService ,private myform: FormBuilder, private router:Router) { }
   get f() { return this.userForm.controls; }
   signinUser(){ 
     var value = this.userForm.value
     if(value.email !== "admin" && value.password !=="admin"){
+      this.submitted = true;
       console.log(this.userForm);
       this.userService.signinUser(this.userForm.value).subscribe((data) => {localStorage.setItem('user', Object.values(data)[1])
       this.router.navigate([""])
       })
     }else{
+      this.submitted = true;
       console.log(this.userForm.value);
       this.userService.signinUser(this.userForm.value).subscribe((data) => {localStorage.setItem('admin', Object.values(data)[1])})
       this.router.navigate(["/admin"]) 
