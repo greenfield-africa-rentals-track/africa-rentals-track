@@ -12,6 +12,10 @@ export class NavbarhomeconectComponent implements OnInit {
     this.router.navigate(["/admin"])
     
   }
+  logout() {
+    localStorage.clear()
+    this.router.navigate([""])
+  }
   ngOnInit(): void {
   }
 

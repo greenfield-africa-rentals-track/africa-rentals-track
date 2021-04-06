@@ -18,6 +18,7 @@ import {ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { AdminComponent } from './commponents/admin/admin.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 const appRoutes: Routes = [
 ];
@@ -33,6 +34,9 @@ import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.c
 import { NavbarhomeconectComponent } from './commponents/navbarhomeconect/navbarhomeconect.component';
 import { NavbaruserconectComponent } from './commponents/navbaruserconect/navbaruserconect.component';
 import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.component';
+import { UsersinfoComponent } from './commponents/usersinfo/usersinfo.component';
+import { UpdateComponent } from './commponents/update/update.component';
+
 
 
 
@@ -52,7 +56,9 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
      LogoutnavbarComponent,
      NavbarhomeconectComponent,
      NavbaruserconectComponent,
-     NavbarinfoComponent
+     NavbarinfoComponent,
+     UsersinfoComponent,
+     UpdateComponent,
 
   ],
   imports: [
@@ -75,7 +81,9 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
     FormsModule,
     
     HttpClientModule,
-    
+
+    Ng2SearchPipeModule
+
 
   ],
   providers: [],
@@ -84,4 +92,4 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
 })
 export class AppModule {
 
- }
+}

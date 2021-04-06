@@ -1,9 +1,11 @@
  <app-conetctnavbar></app-conetctnavbar>
 <form class="signup-cont" [formGroup]="UserForm" (submit)="signupUser()">
+
     <h1> <b>Register Now</b><hr></h1>
     
   
     <label><i class="fas fa-user-circle fa-lg"></i>
+
     <input class="inp-box" type="text" name="username"  formControlName="firstName" placeholder="First name" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
      </label>
     <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
@@ -36,11 +38,15 @@
         <div *ngIf="f.phoneNumber.errors.required">Phone Number is required</div>
         <div *ngIf="f.phoneNumber.errors.minlength">Phone number must be at least 8 characters</div>
     </div>
+
+
+
     <button class="signup-bott" (click)="redirectsignin()"> <b>Signup</b> </button>
     <div><hr></div>
     <h2><b>Our Sponsors</b></h2>
     <br>
 </form> 
+
 
 
 

@@ -4,6 +4,7 @@ import { FormBuilder, Validators } from "@angular/forms";
 import Swal from 'sweetalert2';
 import { Router, RouterModule, Routes } from '@angular/router';
 
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -11,6 +12,7 @@ import { Router, RouterModule, Routes } from '@angular/router';
 })
 
 export class SignupComponent implements OnInit {
+  
   UserForm= this.myform.group({
     firstName:["", Validators.required],
     lastName:["", Validators.required],
@@ -30,7 +32,7 @@ export class SignupComponent implements OnInit {
         showConfirmButton: false,
         timer: 2000
       })
-
+      this.redirectsignin()
       })
     }else{
       return;
@@ -42,5 +44,6 @@ export class SignupComponent implements OnInit {
   }
   ngOnInit(): void {
   }
+  
  
 }

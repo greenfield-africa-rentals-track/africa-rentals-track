@@ -1,0 +1,24 @@
+.comment-entry {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #3498DB;
+    list-style: none;
+    width: 70%;
+    font-size: .9em;
+  }
+  .post-list-entry {
+    list-style: none;
+    border: 1px solid #3498DB;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+  }
+  .post-list-entry-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Francois One';
+  }
+  .stats-list-item-views {
+  font-weight: bold;
+}
