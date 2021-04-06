@@ -35,6 +35,7 @@ import { NavbaruserconectComponent } from './commponents/navbaruserconect/navbar
 import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,8 +73,9 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
     MDBBootstrapModule.forRoot(),
     IvyCarouselModule,
     FormsModule,
-
+    
     HttpClientModule,
+    
 
   ],
   providers: [],
