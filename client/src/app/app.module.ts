@@ -35,6 +35,8 @@ import { NavbarhomeconectComponent } from './commponents/navbarhomeconect/navbar
 import { NavbaruserconectComponent } from './commponents/navbaruserconect/navbaruserconect.component';
 import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.component';
 import { UsersinfoComponent } from './commponents/usersinfo/usersinfo.component';
+import { UpdateComponent } from './commponents/update/update.component';
+
 
 
 
@@ -55,7 +57,8 @@ import { UsersinfoComponent } from './commponents/usersinfo/usersinfo.component'
      NavbarhomeconectComponent,
      NavbaruserconectComponent,
      NavbarinfoComponent,
-     UsersinfoComponent
+     UsersinfoComponent,
+     UpdateComponent,
 
   ],
   imports: [

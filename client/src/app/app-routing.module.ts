@@ -12,6 +12,8 @@ import { CardProductComponent } from './commponents/card-product/card-product.co
 import {SigninComponent } from './commponents/signin/signin.component'
 import { NavbarhomeconectComponent } from './commponents/navbarhomeconect/navbarhomeconect.component';
 import { NavbaruserconectComponent } from './commponents/navbaruserconect/navbaruserconect.component';
+import { UsersinfoComponent } from './commponents/usersinfo/usersinfo.component';
+import { UpdateComponent } from './commponents/update/update.component';
 const routes: Routes = [
   {path:"profil",component:NavbaruserconectComponent},
   {path:"",component:NavbarComponent},
@@ -20,6 +22,8 @@ const routes: Routes = [
   {path:"Signup",component:SignupComponent},
   {path:"signin",component:SigninComponent},
   {path:"conect",component:NavbarhomeconectComponent},
+  {path:"user",component:UsersinfoComponent},
+  {path:"update",component:UpdateComponent},
 ];
 
 @NgModule({

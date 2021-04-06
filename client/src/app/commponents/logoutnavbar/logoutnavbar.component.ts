@@ -9,12 +9,18 @@ export class LogoutnavbarComponent implements OnInit {
 
   constructor(private router:Router) { }
 
-  goToHome(){
-    this.router.navigate([""])
+  goToHomt(){
+    this.router.navigate(["/admin"])
     
+  }
+  update(){
+    this.router.navigate(['/update'])
   }
   goToHom(){
     this.router.navigate(["/conect"])
+  }
+  rediract(){
+    this.router.navigate(['/user'])
   }
   ngOnInit(): void {
   }
