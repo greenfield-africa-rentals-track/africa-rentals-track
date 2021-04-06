@@ -32,7 +32,7 @@ export class SignupComponent implements OnInit {
         showConfirmButton: false,
         timer: 2000
       })
-
+      this.redirectsignin()
       })
     }else{
       return;
