@@ -18,6 +18,7 @@ import {ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { AdminComponent } from './commponents/admin/admin.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 const appRoutes: Routes = [
 ];
@@ -75,7 +76,9 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
     FormsModule,
     
     HttpClientModule,
-    
+
+    Ng2SearchPipeModule
+
 
   ],
   providers: [],
