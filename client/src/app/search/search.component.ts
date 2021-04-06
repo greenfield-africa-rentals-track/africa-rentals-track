@@ -10,6 +10,7 @@ import {ProductService} from '../servises/product.service';
 
 export class SearchComponent implements OnInit {
   data: any=[];
+  searchedString:string="";
   
   constructor(private pdService:ProductService) { }
   getprod(){
@@ -19,19 +20,21 @@ export class SearchComponent implements OnInit {
      
     })
   }
-  transform(languages: string[]): any[]{     
+  transform(): any{     
     if(!this.data) {
         return  [];
     }
-    this.data = this.data.toLowerCase();
-   return languages.filter(
-       x =>x.toLowerCase().includes(this.data)
-   )
+    
+   var xx= this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
+   console.log("xxx",xx,this.searchedString )
+   
+      
+   
+ 
  }
 
   ngOnInit(): void {
-    this.getprod(),
-    this.transform
+    this.getprod()
     
   }
 
