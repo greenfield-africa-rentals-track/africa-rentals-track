@@ -1,10 +1,10 @@
-/* @media screen and (min-width: 900px) {
+/* /* @media screen and (min-width: 900px) {
   .example-spacer {
     flex: 1 1 auto;
   }
 .example-spacer {
   flex: 1 1 auto;
-}
+} */
 
 /* SIGNUP BUTTON*/
 /* section {
@@ -96,7 +96,13 @@
 
 
 /* } */ 
-
+@media screen and (min-width: 900px) {
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+.example-spacer {
+  flex: 1 1 auto;
+}
 .nav-link{
   font-size: 18px;
 
@@ -108,18 +114,14 @@
   
 } 
 .link1{
+  cursor: pointer;
   /* margin-left: -60%; */
   cursor: pointer;
 
 }
-.link2{
-  /* margin-left: -30%; */
-}
-.link3{
-  /* margin-left: -10%; */
-}
+
 .mynav{
   background-image: url("../../../assets/banner.jpg");
   background-attachment: cover;
 }
-
+}
