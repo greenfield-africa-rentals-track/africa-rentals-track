@@ -109,6 +109,7 @@
 } 
 .link1{
   /* margin-left: -60%; */
+  cursor: pointer;
 
 }
 .link2{
@@ -121,3 +122,4 @@
   background-image: url("../../../assets/banner.jpg");
   background-attachment: cover;
 }
+

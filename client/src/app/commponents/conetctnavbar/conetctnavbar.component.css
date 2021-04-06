@@ -10,6 +10,7 @@
   } 
   .link1{
     /* margin-left: -60%; */
+    cursor: pointer;
   
   }
   .link2{
