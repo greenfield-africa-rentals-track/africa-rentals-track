@@ -18,6 +18,7 @@ import {ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { AdminComponent } from './commponents/admin/admin.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 const appRoutes: Routes = [
 ];
@@ -26,6 +27,9 @@ import { SignupComponent } from './commponents/signup/signup.component';
 import {FormsModule} from '@angular/forms'
 
 import { HttpClientModule } from '@angular/common/http';
+import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
+import { SigninComponent } from './commponents/signin/signin.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -33,12 +37,17 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     InformationComponent,
     NavbarComponent,
-    
+    ConetctnavbarComponent,
     CardProductComponent,
     ProductComponent,
     AdminComponent,
-    SignupComponent
-     
+    SignupComponent,
+    ConetctnavbarComponent,
+
+    SearchComponent, 
+
+    SigninComponent
+
   ],
   imports: [
     BrowserModule,
@@ -60,6 +69,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
 
     HttpClientModule,
+    Ng2SearchPipeModule
 
   ],
   providers: [],
