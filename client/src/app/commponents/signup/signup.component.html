@@ -1,9 +1,11 @@
  <app-conetctnavbar></app-conetctnavbar>
 <form class="signup-cont" [formGroup]="UserForm" (submit)="signupUser()">
+
     <h1> <b>Register Now</b><hr></h1>
     
   
     <label><i class="fas fa-user-circle fa-lg"></i>
+
     <input class="inp-box" type="text" name="username"  formControlName="firstName" placeholder="First name" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }">
      </label>
     <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
