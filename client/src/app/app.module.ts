@@ -92,4 +92,4 @@ import { UpdateComponent } from './commponents/update/update.component';
 })
 export class AppModule {
 
- }
+}
