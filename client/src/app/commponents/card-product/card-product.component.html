@@ -41,13 +41,13 @@
 </div> -->
 
   <carousel class="myCarousel" [cellsToShow]=3.5 [height]=400 >
-    <div class="carousel-cell" *ngFor="let item of dataList" >
+    <div class="carousel-cell" *ngFor="let data of dataList" >
       <div class="card" style="width: 25rem; height: 40rem" >
         
         
         <div class="card-body" (click)="functionON()">
-          <img class="card-img-top" style="width: 65%; margin-top: -20%;" alt="Card image cap" src={{item.image}} >
-          <h5 class="card-title" style="margin-top: -30%"><b></b>{{item.name}}</h5>
+          <img class="card-img-top" style="width: 65%; margin-top: -20%;" alt="Card image cap" src={{data.imageurl}} >
+          <h5 class="card-title" style="margin-top: -30%"><b></b>{{data.name}}</h5>
           
           <!-- <p class="card-text">Description:</p>
           <p class="card-text">Description:</p>
