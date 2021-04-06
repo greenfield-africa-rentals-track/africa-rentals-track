@@ -1,3 +1,5 @@
+
+
 .nav-link{
     font-size: 18px;
   
@@ -11,15 +13,21 @@
   .link1{
     /* margin-left: -60%; */
     cursor: pointer;
-  }
-  /* }
-  .link2{
-     margin-left: -30%; 
+  
   }
   .link3{
-     margin-left: -10%; 
-  } */
+    /* margin-left: -60%; */
+    cursor: pointer;
+  
+  }
+
   .mynav{
-    background-image: url("../../../assets/banner.jpg");
+    background-image: url("../../../assets/banner.jpg")
   }
   
+
+
+    
+  
+  
+
