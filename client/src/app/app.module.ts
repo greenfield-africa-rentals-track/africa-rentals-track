@@ -18,6 +18,7 @@ import {ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { AdminComponent } from './commponents/admin/admin.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 const appRoutes: Routes = [
 ];
@@ -26,8 +27,14 @@ import { SignupComponent } from './commponents/signup/signup.component';
 import {FormsModule} from '@angular/forms'
 
 import { HttpClientModule } from '@angular/common/http';
-import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
+import { ConetctnavbarComponent } from './commponents/conectnavbar/conetctnavbar.component';
 import { SigninComponent } from './commponents/signin/signin.component';
+import { SearchComponent } from './search/search.component';
+import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.component';
+import { NavbarhomeconectComponent } from './commponents/navbarhomeconect/navbarhomeconect.component';
+import { NavbaruserconectComponent } from './commponents/navbaruserconect/navbaruserconect.component';
+import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.component';
+
 
 
 @NgModule({
@@ -41,7 +48,12 @@ import { SigninComponent } from './commponents/signin/signin.component';
     AdminComponent,
     SignupComponent,
     ConetctnavbarComponent,
-    SigninComponent
+    SearchComponent, 
+    SigninComponent,
+     LogoutnavbarComponent,
+     NavbarhomeconectComponent,
+     NavbaruserconectComponent,
+     NavbarinfoComponent
 
   ],
   imports: [
@@ -62,8 +74,11 @@ import { SigninComponent } from './commponents/signin/signin.component';
     MDBBootstrapModule.forRoot(),
     IvyCarouselModule,
     FormsModule,
-
+    
     HttpClientModule,
+
+    Ng2SearchPipeModule
+
 
   ],
   providers: [],

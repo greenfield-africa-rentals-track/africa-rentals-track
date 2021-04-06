@@ -1,0 +1,107 @@
+.backgbox{
+ 
+    width:100%;
+    height: auto;
+}
+
+
+body {
+  font-family: Arial;
+ 
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+form.example input[type=text] {
+  
+  width:100%;
+  padding: 10px;
+ 
+  margin-left: -30%;
+  
+  z-index:999;
+  position:relative;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dedede #bababa #aaa #bababa;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eae8e8));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -o-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+ 
+}
+
+form.example button {
+  padding: 10px; 
+  color: white;
+  font-size: 15px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+
+  z-index:999;
+  position:relative;
+  width: 30%;
+ 
+  height: 43px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #2196F3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eae8e8));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -o-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: linear-gradient(top, #f6f6f6, #eae8e8);
+}
+
+form.example button:hover {
+  background: #0b7dda;
+  background-size: cover;
+
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* .example{
+  width: 100%;
+} */
+
+.nav-image{
+    width: 100%;
+    margin-top: -8%;
+    
+    
+    
+}
+.example{
+    
+    margin-left: 50%;
+    margin: auto;
+    
+}
+.backg-text{
+    font-size: 31px;
+    margin-top: -10%;
+    margin-left: 3%;
+    color: white;
+    font-family: Helvetica;
+    text-align: center;
+    text-shadow: 2px 1px black; 
+    }
+    
+
+    
