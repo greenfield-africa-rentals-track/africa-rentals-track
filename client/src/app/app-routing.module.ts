@@ -10,13 +10,14 @@ import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavba
 import { NavbarComponent } from './commponents/navbar/navbar.component';
 import { CardProductComponent } from './commponents/card-product/card-product.component';
 import {SigninComponent } from './commponents/signin/signin.component'
-
+import { NavbarhomeconectComponent } from './commponents/navbarhomeconect/navbarhomeconect.component';
 const routes: Routes = [
   {path:"",component:NavbarComponent},
   {path:"info",component:InformationComponent},
   {path:"admin",component:AdminComponent},
   {path:"Signup",component:SignupComponent},
   {path:"signin",component:SigninComponent},
+  {path:"conect",component:NavbarhomeconectComponent},
 ];
 
 @NgModule({
