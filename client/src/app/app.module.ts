@@ -18,6 +18,7 @@ import {ReactiveFormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { AdminComponent } from './commponents/admin/admin.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 const appRoutes: Routes = [
 ];
@@ -33,6 +34,7 @@ import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.c
 import { NavbarhomeconectComponent } from './commponents/navbarhomeconect/navbarhomeconect.component';
 import { NavbaruserconectComponent } from './commponents/navbaruserconect/navbaruserconect.component';
 import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.component';
+
 
 
 @NgModule({
@@ -72,8 +74,11 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
     MDBBootstrapModule.forRoot(),
     IvyCarouselModule,
     FormsModule,
-
+    
     HttpClientModule,
+
+    Ng2SearchPipeModule
+
 
   ],
   providers: [],
