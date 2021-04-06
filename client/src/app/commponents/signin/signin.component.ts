@@ -21,14 +21,14 @@ export class SigninComponent implements OnInit {
     if(value.email !== "admin" && value.password !=="admin"){
       console.log(this.userForm);
       this.userService.signinUser(this.userForm.value).subscribe((data) => {localStorage.setItem('user', Object.values(data)[1])
-      this.router.navigate([""])
+      this.router.navigate(["/profil"])
       })
     }else{
       console.log(this.userForm.value);
       
       // console.log("email",value.email, "pass", value.password);
       this.userService.signinUser(this.userForm.value).subscribe((data) => {localStorage.setItem('admin', Object.values(data)[1])})
-      this.router.navigate(["/admin"])
+      setTimeout(() => {this.router.navigate(["/admin"])}, 1000)
       
       
       // console.log("admin")

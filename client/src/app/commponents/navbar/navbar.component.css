@@ -1,101 +1,4 @@
-/* /* @media screen and (min-width: 900px) {
-  .example-spacer {
-    flex: 1 1 auto;
-  }
-.example-spacer {
-  flex: 1 1 auto;
-} */
 
-/* SIGNUP BUTTON*/
-/* section {
-  display: table;
-}
-.example-label {
-  display: table-cell;
-  font-size: 14px;
-  margin-left: 8px;
-  min-width: 120px;
-}
-.example-button-row {
-  display: table-cell;
-  width: 490px;
-}
-.example-button-row .mat-button-base {
-  margin: 8px 8px 8px 0;
-}
-.example-flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.example-button-container {
-  display: flex;
-  justify-content: center;
-  width: 120px;
-}
-.mat-raised-button.mat-warn {
-  background-color: #0066cc;
-  
-}
-.warn:hover{
-    font-size: 30px;
-} */ 
-/* .nav-image{
-  width: 100%;
-  height: auto;
-  margin-bottom: -48.5%;
-  
-}
-
-.backgbox{
-  width:100%;
-  height: auto;
-
-
-
-} */
-
-
-/* .backg-text{
-  font-size: 10px;
-  margin-top: 10%;
-  color: white;
-  font-family: Helvetica;
-  text-align: center;
-  text-shadow: 2px 1px black;
-  
- 
-  
-  
-} *
- .search-input{
-    margin-left: 33em;
-    margin-top: 3em;
-    width: 28em;
-    height: 3em;
-    border-radius: 11px;
-    opacity: 0.9;
-    outline: none;
-    font-size: 15px;
-}
-.search-input:hover{
-    opacity: 1;
-    font-weight: bold;
-}
-.search-icon{
-    opacity: 0.8;
-    margin-left: -3em;
-}
-}
- */
-/* .navbar{
-  height: 4%;
- background-image: url("../../../assets/blue.png"); *
-   background-size: cover;
-  background-position: center center; */
-
-
-/* } */ 
 @media screen and (min-width: 900px) {
   .example-spacer {
     flex: 1 1 auto;
@@ -116,6 +19,7 @@
 .link1{
   cursor: pointer;
   /* margin-left: -60%; */
+  cursor: pointer;
 
 }
 
