@@ -30,6 +30,7 @@ import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavba
 import { SigninComponent } from './commponents/signin/signin.component';
 import { SearchComponent } from './search/search.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,8 +42,11 @@ import { SearchComponent } from './search/search.component';
     AdminComponent,
     SignupComponent,
     ConetctnavbarComponent,
-    SigninComponent,
+
     SearchComponent, 
+
+    SigninComponent
+
   ],
   imports: [
     BrowserModule,
