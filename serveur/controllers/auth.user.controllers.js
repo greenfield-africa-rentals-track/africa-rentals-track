@@ -1,6 +1,7 @@
 const UserModule = require('../models/userModule.js');
 const bcrypt = require('bcrypt');
-const signupValidation = require('../auth.js')
+const signupValidation = require('../auth.js');
+const jwt = require("jsonwebtoken");
 
 const createUser = async (req, res) => {
     //VALIDATE THE DATA
@@ -31,22 +32,30 @@ module.exports.createUser = createUser
 
 const findUser = async (req, res) => {
  if(req.body.email === "admin" && req.body.password=== "admin"){
-     res.send("admin");
+     const token = jwt.sign({_id: 00}, "zeruiopmlkjhgvcxwcvwdf");
+     res.header("auth-token", token);
+     res.send({message: "admin", token: token});
  } else {
      try{
         const user = await UserModule.findOne({ email: req.body.email})
-        // console.log(user);
+        
         if (!user) {
             res.send("User not found");
+            console.log("User not found");
         }
         if(await bcrypt.compare(req.body.password, user.password)){
-            res.send("Connected successfully");
+            const token = jwt.sign({_id: user._id}, "zeruiopmlkjhgvcxwcvwdf")
+            res.header("auth-token", token)
+            res.send({message: "Connected successfully", token: token})
+            console.log("Connected successfully");
         }else{
             res.send("Email or password incorrect")
+            console.log("Email or password incorrect");
         }
     }
     catch(err){
-      res.send("could not connect")
+      res.send(err, "could not connect")
+      console.log(err, "could not connect");
     }
     }   
 }
