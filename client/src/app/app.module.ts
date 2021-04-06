@@ -28,6 +28,7 @@ import {FormsModule} from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { ConetctnavbarComponent } from './commponents/conetctnavbar/conetctnavbar.component';
 import { SigninComponent } from './commponents/signin/signin.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -41,6 +42,9 @@ import { SigninComponent } from './commponents/signin/signin.component';
     AdminComponent,
     SignupComponent,
     ConetctnavbarComponent,
+
+    SearchComponent, 
+
     SigninComponent
 
   ],
