@@ -2,13 +2,18 @@
 <div class="container1">
 <div class="create">
 	<div class="create-editor">
-	  <h2>Add Product</h2>
+	  <h2><u>Add Product</u></h2>
 	  <form [formGroup]="productForm">
-		<input class="create-input" type="text"  placeholder="Name" formControlName="name"/>
-		<input class="create-input" type="text"  placeholder="Image URL" formControlName="imageurl"/>
-		<input class="create-input" type="text"  placeholder="Price" formControlName="price"/>
-		<input class="create-input" type="text"  placeholder="Type" formControlName="type"/>
-		<textarea class="create-body-textarea"  placeholder="Description" formControlName="description"></textarea>
+		<label> Name :</label>
+		<input class="create-input" type="text"   formControlName="name"/>
+		<label> Image :</label>
+		<input class="create-input" type="text"   formControlName="imageurl"/>
+		<label> Price :</label>
+		<input class="create-input" type="text"   formControlName="price"/>
+		<label> Category :</label>
+		<input class="create-input" type="text"  formControlName="type"/>
+		<label> Description :</label>
+		<textarea class="create-body-textarea"   formControlName="description"></textarea>
 		<button class="create-submit-button" type="submit" (click)="submit()"><b>Save post</b></button>
 	  </form>
 	</div>

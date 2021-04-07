@@ -27,7 +27,9 @@ export class InformationComponent implements OnInit {
       window.location.reload()
     }
   ngOnInit(): void {
-    if(localStorage.user===undefined){
+     if(localStorage.admin!==undefined){
+      this.router.navigate(["profil","info"])
+    } else if(localStorage.user===undefined){
      this.router.navigate([""])
       Swal.fire({
         icon: 'error',
@@ -36,6 +38,7 @@ export class InformationComponent implements OnInit {
         timer: 3000
         
       })
+   
  
     }else if(localStorage.user!==undefined){
       this.router.navigate(["profil","info"])
