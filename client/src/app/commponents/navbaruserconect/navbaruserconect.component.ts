@@ -13,9 +13,14 @@ export class NavbaruserconectComponent implements OnInit {
     localStorage.clear()
     this.router.navigate([""])
   }
-  profil() {
-    this.router.navigate(["/profile"])
-  }
+  profil(){
+    if(localStorage.user){
+         this.router.navigate(["/profile"])
+    }
+    }
+   
+    
+  
   ngOnInit(): void {
   }
 
