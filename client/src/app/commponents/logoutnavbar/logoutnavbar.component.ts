@@ -13,9 +13,7 @@ export class LogoutnavbarComponent implements OnInit {
     this.router.navigate(["/admin"])
     
   }
-  update(){
-    this.router.navigate(['/update'])
-  }
+  
   goToHom(){
     this.router.navigate(["/conect"])
   }

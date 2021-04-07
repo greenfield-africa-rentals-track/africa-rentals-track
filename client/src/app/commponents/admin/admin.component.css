@@ -33,13 +33,14 @@ body {
 }
 
 button {
+  border-radius: 5%;
   cursor: pointer;
   border: none;
   border-radius: 3px;
   font-family: 'PT Serif', sans-serif;
   color: #ECF0F1;
-  background-color: green;
-  width: 100%;
+  background-color:	#32CD32;
+  width: 80%;
   padding: 10px;
 }
 
@@ -50,6 +51,7 @@ button {
   color:#1c8adb;
   text-align: center;
   font-size: 22px;
+  margin-left: -5%
 }
 
 .create-editor {
@@ -59,29 +61,34 @@ button {
 
 
 .create-input {
-  width: 100%;
+  width: 80%;
   display: block;
   font-size: .9em;
   height: 30px;
   margin-bottom: 15px;
   border: groove;
-  padding: 5px;
+  padding: 15px;
   border-radius: 3px;
+  
 }
 
 .create-body-textarea {
-  width: 100%;
+  width: 80%;
   font-size: .9em;
   display: block;
-  height: 400px;
+  height: 330px;
   border: groove;
   padding: 5px;
   resize: none;
 }
 .container1{
   width: 700px;
-  height: 660px;
+  height: 615px;
   margin-left: 25%;
+  
+}
+.create{
+  margin-left: 15%
 }
 
 

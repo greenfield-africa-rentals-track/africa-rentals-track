@@ -59,13 +59,15 @@
 // //           }
 // //     })
 const mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/trucksy" ,{ useNewUrlParser: true, useUnifiedTopology: true })
+const jiji = "mongodb+srv://abidijihed:Ji31826832@cluster0.lbhsv.mongodb.net/trucksy?retryWrites=true&w=majority"
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
+mongoose.set('useUnifiedTopology', true);
 mongoose.Promise = require('bluebird');
-const db = mongoose.connection;
-db.on("error", console.error.bind(console, "connection error:"));
-db.once("open", function(){
-    console.log('db connected');
+const dbd = mongoose.connect( jiji,{ useNewUrlParser: true, useUnifiedTopology: true },(err)=>{
+    if (err) throw err;
 })
+const db = mongoose.connection;
 
 module.exports = db;

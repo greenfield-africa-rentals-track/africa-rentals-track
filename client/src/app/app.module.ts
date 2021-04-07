@@ -38,6 +38,8 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
 import { UsersinfoComponent } from './commponents/usersinfo/usersinfo.component';
 import { UpdateComponent } from './commponents/update/update.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { ProfileComponent } from './profile/profile.component';
+import { RoundBlockDirective } from './directiv/round-block.directive';
 
 
 
@@ -62,6 +64,8 @@ import { FilterPipe } from './pipes/filter.pipe';
      UsersinfoComponent,
      UpdateComponent,
      FilterPipe,
+     ProfileComponent,
+     RoundBlockDirective,
 
   ],
   imports: [

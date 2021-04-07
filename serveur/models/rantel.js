@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');
-
-const rantelSchema = new mongoose.Schema({
+const db = require('../database/connection');
+const mongoose =require('mongoose')
+const rantelSchema =  mongoose.Schema({
     Startdate: String,
     Enddate: String,
     quantity: Number,
 });
 
-module.exports = mongoose.model("rantel", rantelSchema)
+module.exports = db.model("rantel", rantelSchema)

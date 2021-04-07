@@ -12,10 +12,13 @@ searchString:string=""
   getProduct() {
     return this.http.get("http://localhost:3000/api/trucksy/products");
   }
+  getOneproduct(id:String){
+    return this.http.get("http://localhost:3000/api/trucksy/products/"+id);
+
+  }
   obs(): Observable<string>{
     const mystr= of(this.searchString)
     console.log("observable",mystr)
-    return mystr
-  }
+    return mystr}
 
 }

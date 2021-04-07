@@ -77,6 +77,14 @@ createProduct :async (req, res) => {
     }catch(err){
         res.send("ERROR",err)
     }
+},
+findOneProduct: async (req, res) => {
+try{
+const product = await myproduct.find({ _id: req.params.id})
+res.send(product)
+}catch(err){
+  res.send(err)
+}
 }
 
 }
