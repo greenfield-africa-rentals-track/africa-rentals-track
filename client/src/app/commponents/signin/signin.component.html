@@ -1,7 +1,7 @@
 <app-conetctnavbar></app-conetctnavbar>
 <form class="signin-cont" [formGroup]="userForm" (submit)="signinUser()">
-
-    <h1><b>Sign in</b><hr></h1>
+<div class="myH1">
+    <h1><b>Sign in</b></h1></div>
     <label><i class="fas fa-envelope fa-lg"></i>
     <input type='text' name="email" formControlName="email" placeholder='Email' class="inp-box"  [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
       <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
@@ -17,8 +17,8 @@
     </div>
    </label>
     <button class="signin-bott">Connexion</button>
-
-    <h2><b>Our Sponsors</b></h2>
+   
+    <h2><hr><b>Our Sponsors</b></h2>
 
 </form>
 
