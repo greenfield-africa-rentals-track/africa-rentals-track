@@ -31,3 +31,20 @@ createProduct :async (req, res) => {
 
 }
 
+var test = async()=>{
+const newprod = new myproduct({
+  name: "req.body.name",
+  imageurl: "req.body.imageurl",
+  description: "req.body.description",
+  price: "req.body.price",
+  type: "req.body.type",
+});
+
+try {
+  const saveprod = await newprod.save();
+  console.log('product saved!')
+}catch(err){
+  console.log(err)
+}
+}
+test()

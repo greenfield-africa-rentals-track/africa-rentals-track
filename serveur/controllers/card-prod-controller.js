@@ -16,9 +16,7 @@ createProductcard :async (req, res) => {
     const newprod = new myproductcard({
         name: req.body.name,
         imageurl: req.body.imageurl,
-        description: req.body.description,
-        price: req.body.price,
-        type: req.body.type,
+       
     });
    
     try {
