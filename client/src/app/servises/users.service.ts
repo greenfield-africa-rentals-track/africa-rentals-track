@@ -14,4 +14,7 @@ setToken(){
   signinUser(user: any){
     return this.http.post("http://localhost:3000/api/trucksy/login", user)
   }
+  getUsers(user: any){
+    return this.http.get("http://localhost:3000/api/trucksy/users")
+  }
 }

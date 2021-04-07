@@ -37,7 +37,6 @@ export class SignupComponent implements OnInit {
     }
   }
   redirectsignin(){
-    // this.router.navigate(["/signin"])
     setTimeout(() => {this.router.navigate(["/signin"])}, 2100)
   }
   ngOnInit(): void {
