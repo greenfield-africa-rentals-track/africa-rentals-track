@@ -22,6 +22,9 @@ export class ProductComponent implements OnInit {
      
     })
   }
+  update(){
+    this.router.navigate(['/update'])
+  }
 
   ngOnInit(): void {
     this.getprod()
