@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
 
+ import { FilterPipe } from '../../pipes/filter.pipe'
+
 import { ProductsService} from '../../services/products.service'
 
 import {ProductService} from '../../services/product.service';
@@ -11,8 +13,16 @@ import {ProductService} from '../../services/product.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
+
+
+
   deleteProd: any
+
   mydata: any=[];
+  searchString:string=this.pdService.searchString
+
+
+  
 
   showBin = false;
   constructor(private router:Router ,private pdService:ProductService,private serv:ProductsService) { }
@@ -28,6 +38,7 @@ export class ProductComponent implements OnInit {
     }
   }
 
+
    
   functionON(id:string){
     
@@ -38,8 +49,9 @@ export class ProductComponent implements OnInit {
     
   }
   getprod(){
-    this.pdService.getProduct().subscribe((data)=>{
+    this.pdService.getProduct().subscribe((data:any)=>{
       this.mydata = data
+      this.pdService.searchResult=data
       console.log(data,"pxamachekl")
      
     })
@@ -53,7 +65,12 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.getprod()
+
+    this.pdService.obs().subscribe(data=>{this.searchString=data,console.log("darrrr",data)})
+    console.log("result search",this.pdService.searchResult)
+
     this.showbnin()
+
   }
 
 }
