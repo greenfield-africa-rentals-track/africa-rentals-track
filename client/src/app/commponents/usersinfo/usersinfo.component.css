@@ -1,24 +1,30 @@
-.comment-entry {
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid #3498DB;
-    list-style: none;
-    width: 70%;
-    font-size: .9em;
-  }
-  .post-list-entry {
-    list-style: none;
-    border: 1px solid #3498DB;
-    margin-bottom: 20px;
-    padding: 10px;
-    width: 400px;
-    height: 400px;
-  }
-  .post-list-entry-title {
-    font-weight: bold;
-    font-size: 1.2em;
-    font-family: 'Francois One';
-  }
-  .stats-list-item-views {
-  font-weight: bold;
+
+.card-box {
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  width: 188px;
+  border: 1px solid #3498DB;
+  max-height: 270px;
+  margin-right: 1em;
+  margin-top: 5em;
+}
+.thumb-lg {
+  height: 88px;
+  width: 88px;
+}
+h4 {
+  line-height: 22px;
+  font-size: 20px;
+  margin-left: 4px;
+}
+.container{
+  display: flex;
+}
+.content{
+  margin-left: 25%;
+}
+.fullname{
+  display: flex;
 }

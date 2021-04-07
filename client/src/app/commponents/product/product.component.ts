@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
-import {ProductService} from '../../servises/product.service';
+import {ProductService} from '../../services/product.service';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -11,8 +11,11 @@ export class ProductComponent implements OnInit {
 
   constructor(private router:Router ,private pdService:ProductService) { }
    
-  functionON() {
-    this.router.navigate(["/info"])
+  functionON(id:string){
+    
+    console.log(id)
+    this.router.navigate(["/info/"+id])
+   
     
   }
   getprod(){

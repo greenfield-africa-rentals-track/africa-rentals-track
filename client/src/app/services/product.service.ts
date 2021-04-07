@@ -10,6 +10,9 @@ export class ProductService {
   getProduct() {
     return this.http.get("http://localhost:3000/api/trucksy/products");
   }
-  
+  getOneproduct(id:String){
+    return this.http.get("http://localhost:3000/api/trucksy/products/"+id);
+
+  }
 
 }
