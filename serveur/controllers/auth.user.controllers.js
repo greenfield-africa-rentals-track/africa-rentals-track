@@ -3,6 +3,18 @@ const bcrypt = require('bcrypt');
 const signupValidation = require('../auth.js');
 const jwt = require("jsonwebtoken");
 
+
+//FIND ALL USERS
+const FindAllUsers = async (req, res) => {
+    try{
+        const users = await UserModule.find({})
+        res.send(users)
+    }catch(err) {
+        res.send(err);
+    }
+}
+module.exports.FindAllUsers = FindAllUsers
+
 const createUser = async (req, res) => {
     //VALIDATE THE DATA
     // const { error } = signupValidation(req.body);

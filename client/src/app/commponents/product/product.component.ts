@@ -23,7 +23,10 @@ export class ProductComponent implements OnInit {
     })
   }
   update(){
-    this.router.navigate(['/update'])
+    if(localStorage.admin){
+      this.router.navigate(['/update'])
+    }
+    
   }
 
   ngOnInit(): void {
