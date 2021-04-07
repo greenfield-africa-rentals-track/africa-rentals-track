@@ -37,6 +37,7 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
 import { UsersinfoComponent } from './commponents/usersinfo/usersinfo.component';
 import { UpdateComponent } from './commponents/update/update.component';
 import { ProfileComponent } from './profile/profile.component';
+import { RoundBlockDirective } from './directiv/round-block.directive';
 
 
 
@@ -61,6 +62,7 @@ import { ProfileComponent } from './profile/profile.component';
      UsersinfoComponent,
      UpdateComponent,
      ProfileComponent,
+     RoundBlockDirective,
 
   ],
   imports: [

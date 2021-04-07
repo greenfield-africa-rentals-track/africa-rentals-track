@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
-import {AddToCartService} from '../../servise/add-to-cart.service'
+import {AddToCartService} from '../../services/add-to-cart.service'
 @Component({
   selector: 'app-card-product',
   templateUrl: './card-product.component.html',
