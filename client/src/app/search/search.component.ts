@@ -24,9 +24,9 @@ export class SearchComponent implements OnInit {
     if(!this.data) {
         return  [];
     }
-    
-   var xx= this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
-   console.log("xxx",xx,this.searchedString )
+    this.pdService.searchString=this.searchedString.toLowerCase()
+   this.pdService.searchResult = this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
+   console.log("xxx",this.pdService.searchResult )
  }
 
   ngOnInit(): void {
@@ -35,3 +35,4 @@ export class SearchComponent implements OnInit {
   }
 
 }
+

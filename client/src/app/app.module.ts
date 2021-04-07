@@ -20,6 +20,7 @@ import { AdminComponent } from './commponents/admin/admin.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
+
 const appRoutes: Routes = [
 ];
 import {IvyCarouselModule} from 'angular-responsive-carousel';
@@ -36,6 +37,7 @@ import { NavbaruserconectComponent } from './commponents/navbaruserconect/navbar
 import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.component';
 import { UsersinfoComponent } from './commponents/usersinfo/usersinfo.component';
 import { UpdateComponent } from './commponents/update/update.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 
 
@@ -59,6 +61,7 @@ import { UpdateComponent } from './commponents/update/update.component';
      NavbarinfoComponent,
      UsersinfoComponent,
      UpdateComponent,
+     FilterPipe,
 
   ],
   imports: [
