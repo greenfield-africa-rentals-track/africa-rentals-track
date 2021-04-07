@@ -16,6 +16,7 @@ export class NavbarhomeconectComponent implements OnInit {
     localStorage.clear()
     this.router.navigate([""])
   }
+ 
   ngOnInit(): void {
   }
 
