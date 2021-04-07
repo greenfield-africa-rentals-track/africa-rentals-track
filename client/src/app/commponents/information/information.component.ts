@@ -30,10 +30,10 @@ export class InformationComponent implements OnInit {
     if(localStorage.user===undefined){
      this.router.navigate([""])
       Swal.fire({
-        icon: 'success',
-        title: 'Your account is created successfully',
+        icon: 'error',
+        title: 'You need to connect before',
         showConfirmButton: false,
-        timer: 2000
+        timer: 3000
         
       })
  

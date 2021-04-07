@@ -1,0 +1,19 @@
+<app-logoutnavbar></app-logoutnavbar>
+<div *ngFor="let data of users">
+    <ul>
+      <li class="post-list-entry" >
+        <div class="post-list-entry-title"> First Name: {{data.firstName}}</div>
+        <div class="post-list-entry-title"> Last Name: {{data.lastName}}</div>
+        <div class="stats-list-item-views">Email: {{data.email}}</div>
+        <div class="stats-list-item-views">Phone Number: {{data.phoneNumber}}</div>
+
+      </li>
+    </ul>
+  </div>
+
+  <!-- <div *ngFor="let data of users">
+    <div>
+      <h1>Email: {{data.email}}</h1>
+      <h1>{{data.firstName}}</h1>
+    </div>
+  </div> -->
