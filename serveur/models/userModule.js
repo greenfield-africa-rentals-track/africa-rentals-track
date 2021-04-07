@@ -1,6 +1,7 @@
-const mongoose = require('mongoose');
+const db = require('../database/connection');
+const mongoose =require('mongoose')
 const bcrypt = require('bcrypt');
-const userSchema = new mongoose.Schema({
+const userSchema =  mongoose.Schema({
     firstName: String,
     lastName: String,
     email: String,
@@ -20,7 +21,7 @@ userSchema.pre('save', async function (next){
     }
 })
 
-module.exports = mongoose.model("user", userSchema)
+module.exports = db.model("user", userSchema)
 
 
 
