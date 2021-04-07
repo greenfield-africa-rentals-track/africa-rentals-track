@@ -96,12 +96,11 @@ form.example::after {
 .backg-text{
     font-size: 31px;
     margin-top: -10%;
-    margin-left: 3%;
     color: white;
     font-family: Helvetica;
-    text-align: center;
+    margin-left: 25%;
     text-shadow: 2px 1px black; 
     }
-    
+
 
     
