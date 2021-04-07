@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
-import { UsersService } from '../.././servises/users.service'
+import { UsersService } from '../../services/users.service'
 @Component({
   selector: 'app-usersinfo',
   templateUrl: './usersinfo.component.html',

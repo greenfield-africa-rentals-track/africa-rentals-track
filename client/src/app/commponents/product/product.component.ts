@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
-import {ProductService} from '../../servises/product.service';
+
 import { ProductsService} from '../../services/products.service'
+
+import {ProductService} from '../../services/product.service';
+
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -10,6 +13,7 @@ import { ProductsService} from '../../services/products.service'
 export class ProductComponent implements OnInit {
   deleteProd: any
   mydata: any=[];
+
   showBin = false;
   constructor(private router:Router ,private pdService:ProductService,private serv:ProductsService) { }
   
@@ -23,8 +27,14 @@ export class ProductComponent implements OnInit {
       this.showBin = true
     }
   }
-  functionON() {
-    this.router.navigate(["/info"])
+
+   
+  functionON(id:string){
+    
+    console.log(id)
+    this.router.navigate(["/info/"+id])
+   
+
     
   }
   getprod(){
