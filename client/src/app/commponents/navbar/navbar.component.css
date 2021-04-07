@@ -19,6 +19,7 @@
 .link1{
   cursor: pointer;
   /* margin-left: -60%; */
+  cursor: pointer;
 
 }
 
@@ -26,4 +27,9 @@
   background-image: url("../../../assets/banner.jpg");
   background-attachment: cover;
 }
+}
+
+h2{
+  font-family: 'Kiwi Maru', serif;
+  font-size:18px;
 }

@@ -1,5 +1,5 @@
 .backgbox{
-    background-color: black ! important;
+ 
     width:100%;
     height: auto;
 }
@@ -14,37 +14,54 @@ body {
   box-sizing: border-box;
   
 }
-
 form.example input[type=text] {
+  
+  width:100%;
   padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  background: #f1f1f1;
-   margin-top: -48%;
-   z-index:999;
-   position:relative;
-   width: 135%;
-   margin-left: -20%;
-   height: 50px;
+ 
+  margin-left: -30%;
+  
+  z-index:999;
+  position:relative;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #dedede #bababa #aaa #bababa;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eae8e8));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -o-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: linear-gradient(top, #f6f6f6, #eae8e8);
  
 }
 
 form.example button {
-  float: right;
-  padding: 10px;
-  background: #2196F3;
+  padding: 10px; 
   color: white;
-  font-size: 17px;
+  font-size: 15px;
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
-  margin-top: -48%; 
+
   z-index:999;
   position:relative;
-  width: 25%;
-  margin-right: -40%;
-  height: 50px;
+  width: 30%;
+ 
+  height: 43px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #2196F3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#eae8e8));
+  background-image: -webkit-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -moz-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -ms-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: -o-linear-gradient(top, #f6f6f6, #eae8e8);
+  background-image: linear-gradient(top, #f6f6f6, #eae8e8);
 }
 
 form.example button:hover {
@@ -59,16 +76,22 @@ form.example::after {
   display: table;
 }
 
+/* .example{
+  width: 100%;
+} */
+
 .nav-image{
     width: 100%;
-    margin-top: -5%;
+    margin-top: -8%;
+    
     
     
 }
 .example{
-    margin-top: 15%;
-    margin-left: 40%;
+    
+    margin-left: 50%;
     margin: auto;
+    
 }
 .backg-text{
     font-size: 31px;
@@ -79,5 +102,6 @@ form.example::after {
     text-align: center;
     text-shadow: 2px 1px black; 
     }
+    
 
     

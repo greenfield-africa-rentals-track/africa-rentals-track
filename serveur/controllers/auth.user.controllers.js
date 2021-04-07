@@ -33,7 +33,7 @@ module.exports.createUser = createUser
 const findUser = async (req, res) => {
  if(req.body.email === "admin" && req.body.password=== "admin"){
      const token = jwt.sign({_id: 00}, "zeruiopmlkjhgvcxwcvwdf");
-     res.header("auth-token", token);
+     res.set("auth-token", token);
      res.send({message: "admin", token: token});
  } else {
      try{
@@ -45,7 +45,7 @@ const findUser = async (req, res) => {
         }
         if(await bcrypt.compare(req.body.password, user.password)){
             const token = jwt.sign({_id: user._id}, "zeruiopmlkjhgvcxwcvwdf")
-            res.header("auth-token", token)
+            res.set("auth-token", token)
             res.send({message: "Connected successfully", token: token})
             console.log("Connected successfully");
         }else{
