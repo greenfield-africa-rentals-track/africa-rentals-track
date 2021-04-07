@@ -7,7 +7,6 @@
     "start": "nodemon server/index.js",
     "data": " nodemon ./database/connection.js"
   },
-  "author": "Hack Reactor Curriculum Team <curriculum.team@hackreactor.com>",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -16,7 +15,6 @@
   },
   "dependencies": {
     "@hapi/joi": "^17.1.1",
-    "angular": "^1.6.5",
     "axios": "^0.17.1",
     "bcrypt": "^5.0.1",
     "bluebird": "^3.5.0",
@@ -29,8 +27,8 @@
     "jquery": "^3.2.1",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.1",
-    "mongoose": "^4.13.21",
-    "nodemon": "^2.0.6",
+    "mongodb": "3.6.6",
+    "mongoose": "^5.4.20",
     "underscore": "^1.8.3"
   }
 }

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
-import {ProductService} from '../../servises/product.service';
 import { ProductsService} from '../../services/products.service'
+import {ProductService} from '../../services/product.service';
+import Swal from 'sweetalert2'
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -15,7 +16,15 @@ export class ProductComponent implements OnInit {
   
   click(id:string){
  this.serv.deleteProduct(id).subscribe((pro)=>{
-   this.deleteProd=pro
+  Swal.fire({
+    icon: 'success',
+    title: 'Your work has been saved',
+    showConfirmButton: false,
+    timer: 1500
+  })
+  setTimeout(() =>{this.deleteProd=pro
+    window.location.reload()}, 300)
+   
   })
 }
   showbnin(){
@@ -23,8 +32,15 @@ export class ProductComponent implements OnInit {
       this.showBin = true
     }
   }
-  functionON() {
-    this.router.navigate(["/info"])
+
+
+  
+   
+  functionON(id:string){
+    
+    console.log(id)
+    this.router.navigate(["/info/"+id])
+   
     
   }
   getprod(){

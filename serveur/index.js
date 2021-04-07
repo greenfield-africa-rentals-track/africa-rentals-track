@@ -19,7 +19,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname+'/../client/dist/client'));
 
 
-mongoose.connect('mongodb://localhost:27017/trucksy');
 
 
 app.use("/",adminRoutes);
