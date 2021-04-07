@@ -24,7 +24,7 @@ const routes: Routes = [
   {path:"signin",component:SigninComponent},
   {path:"conect",component:NavbarhomeconectComponent},
   {path:"user",component:UsersinfoComponent},
-  {path:"update",component:UpdateComponent},
+  {path:"update/:id",component:UpdateComponent},
   {path:"profile",component:ProfileComponent},
 ];
 

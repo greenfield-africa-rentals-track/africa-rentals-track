@@ -44,9 +44,9 @@ export class ProductComponent implements OnInit {
      
     })
   }
-  update(){
+  update(id:string){
     if(localStorage.admin){
-      this.router.navigate(['/update'])
+      this.router.navigate(['/update/'+id])
     }
     
   }
