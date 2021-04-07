@@ -1,27 +1,42 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {ProductService} from '../../services/product.service';
+import {ProductsService} from '../../services/products.service';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {InfoService} from "../../services/info.service"
 import { Router, RouterModule, Routes } from '@angular/router';
+import {ProductService} from '../../services/product.service';
 @Component({
   selector: 'app-update',
   templateUrl: './update.component.html',
   styleUrls: ['./update.component.css']
 })
 export class UpdateComponent implements OnInit {
+  myproducts:any
   products:any
-  // heroForm: FormGroup
-  constructor(private fb: FormBuilder,private objectService:InfoService,private router:Router,private route: ActivatedRoute,private pdService:ProductService) { }
-
+  changeorm:FormGroup
+  constructor(private put: FormBuilder,private objectService:InfoService,private getone:ProductService,private router:Router,private route: ActivatedRoute,private pdService:ProductsService) { 
+    this.changeorm = this.put.group({
+      price: [''],
+    })
+  }
+  updateonee(id:string){
+    console.log(id,'jjjjjj')
+    this.pdService.updaeteone(this.changeorm.value).subscribe((data)=>{
+      this.products=data
+      console.log(this.products,'nnnnnnnnnnnnnnnnnnnnnnn')
+       })
+  }
+ 
   ngOnInit(): void {
-    const routeParams = this.route.snapshot.paramMap;
+ const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute =(routeParams.get('id'));
     if(productIdFromRoute)
- this.pdService.getOneproduct(productIdFromRoute).subscribe((product)=>{
-   this.products=product
-   console.log(this.products,'my one pro')
+ this.getone.getOneproduct(productIdFromRoute).subscribe((product)=>{
+   this.myproducts=product
+   console.log(this.myproducts,'my one pro')
  })
-  }
+
+}
+  
 
 }

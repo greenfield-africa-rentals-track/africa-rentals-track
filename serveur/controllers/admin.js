@@ -30,7 +30,7 @@ module.exports={
 
     update:(req,res)=>{
         console.log("updated", req.params.id)
-        product.update({_id:  req.params.id},(err,results)=>{
+        product.put({_id:  req.params.id},(err,results)=>{
             if(err){
                 res.send(err)
             }else{res.status(200).send(results)
