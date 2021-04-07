@@ -3,11 +3,20 @@ const bcrypt = require('bcrypt');
 const signupValidation = require('../auth.js');
 const jwt = require("jsonwebtoken");
 
+
+//FIND ALL USERS
+const FindAllUsers = async (req, res) => {
+    try{
+        const users = await UserModule.find({})
+        res.send(users)
+    }catch(err) {
+        res.send(err);
+    }
+}
+module.exports.FindAllUsers = FindAllUsers
+
 const createUser = async (req, res) => {
     //VALIDATE THE DATA
-    // const { error } = signupValidation(req.body);
-    // if (error) return res.send(error)
-    //CHECK IF THE USER IS ALREADY IN THE DATABASE   
      const emailExist = await UserModule.findOne({ email: req.body.email});
      if(emailExist) return res.send("Email already exist")
     //CREATE NEW USER
@@ -33,7 +42,7 @@ module.exports.createUser = createUser
 const findUser = async (req, res) => {
  if(req.body.email === "admin" && req.body.password=== "admin"){
      const token = jwt.sign({_id: 00}, "zeruiopmlkjhgvcxwcvwdf");
-     res.header("auth-token", token);
+     res.set("auth-token", token);
      res.send({message: "admin", token: token});
  } else {
      try{
@@ -45,7 +54,7 @@ const findUser = async (req, res) => {
         }
         if(await bcrypt.compare(req.body.password, user.password)){
             const token = jwt.sign({_id: user._id}, "zeruiopmlkjhgvcxwcvwdf")
-            res.header("auth-token", token)
+            res.set("auth-token", token)
             res.send({message: "Connected successfully", token: token})
             console.log("Connected successfully");
         }else{

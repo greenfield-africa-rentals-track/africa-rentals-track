@@ -25,3 +25,7 @@
     background-image: url("../../../assets/banner.jpg")
   }
   
+  h2{
+    font-family: 'Kiwi Maru', serif;
+    font-size:18px;
+  }

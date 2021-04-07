@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-navbaruserconect',
@@ -7,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbaruserconectComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router:Router) { }
+  logout() {
+    localStorage.clear()
+    this.router.navigate([""])
+  }
+  profil(){
+    if(localStorage.user){
+         this.router.navigate(["/profile"])
+    }
+    }
+   
+    
+  
   ngOnInit(): void {
   }
 

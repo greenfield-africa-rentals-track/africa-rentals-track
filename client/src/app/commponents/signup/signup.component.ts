@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { UsersService } from "../../servises/users.service";
+import { UsersService } from "../../services/users.service";
 import { FormBuilder, Validators } from "@angular/forms";
 import Swal from 'sweetalert2';
 import { Router, RouterModule, Routes } from '@angular/router';
-
 
 @Component({
   selector: 'app-signup',
@@ -12,7 +11,6 @@ import { Router, RouterModule, Routes } from '@angular/router';
 })
 
 export class SignupComponent implements OnInit {
-  
   UserForm= this.myform.group({
     firstName:["", Validators.required],
     lastName:["", Validators.required],
@@ -32,18 +30,16 @@ export class SignupComponent implements OnInit {
         showConfirmButton: false,
         timer: 2000
       })
-
+      this.redirectsignin()
       })
     }else{
       return;
     }
   }
   redirectsignin(){
-    // this.router.navigate(["/signin"])
     setTimeout(() => {this.router.navigate(["/signin"])}, 2100)
   }
   ngOnInit(): void {
   }
-  
  
 }

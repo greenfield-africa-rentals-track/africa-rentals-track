@@ -20,6 +20,7 @@ import { AdminComponent } from './commponents/admin/admin.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
+
 const appRoutes: Routes = [
 ];
 import {IvyCarouselModule} from 'angular-responsive-carousel';
@@ -34,6 +35,12 @@ import { LogoutnavbarComponent } from './commponents/logoutnavbar/logoutnavbar.c
 import { NavbarhomeconectComponent } from './commponents/navbarhomeconect/navbarhomeconect.component';
 import { NavbaruserconectComponent } from './commponents/navbaruserconect/navbaruserconect.component';
 import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.component';
+import { UsersinfoComponent } from './commponents/usersinfo/usersinfo.component';
+import { UpdateComponent } from './commponents/update/update.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { ProfileComponent } from './profile/profile.component';
+import { RoundBlockDirective } from './directiv/round-block.directive';
+
 
 
 
@@ -53,7 +60,12 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
      LogoutnavbarComponent,
      NavbarhomeconectComponent,
      NavbaruserconectComponent,
-     NavbarinfoComponent
+     NavbarinfoComponent,
+     UsersinfoComponent,
+     UpdateComponent,
+     FilterPipe,
+     ProfileComponent,
+     RoundBlockDirective,
 
   ],
   imports: [
@@ -87,4 +99,4 @@ import { NavbarinfoComponent } from './commponents/navbarinfo/navbarinfo.compone
 })
 export class AppModule {
 
- }
+}

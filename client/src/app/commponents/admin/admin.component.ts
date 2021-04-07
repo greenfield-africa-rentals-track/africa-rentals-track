@@ -35,7 +35,8 @@ export class AdminComponent implements OnInit {
     if(localStorage.admin===undefined){
       this.router.navigate(["/signin"])
     }else if (localStorage.admin!==undefined){
-      this.router.navigate(["/admin"])
+      
+      this.router.navigate(["/admin","user"])
     }
   }
 

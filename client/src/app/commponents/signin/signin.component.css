@@ -1,3 +1,4 @@
+
 .signin-cont{
         display: inline-grid;
         color: #1c8adb;
@@ -50,7 +51,15 @@
     margin-right: -35%;
 }
 h1{
+    font-family: 'Kiwi Maru', serif;
+    
+}
+h2{
+    background-color:white;
     text-align: center;
     font-size: 22px;
     font-family: 'Kiwi Maru', serif;
+    margin-bottom: -30%;
+    color: rgb(108, 108, 108);
+    
 }
