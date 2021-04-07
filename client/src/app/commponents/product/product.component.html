@@ -21,7 +21,7 @@
                 <div class="bin" *ngIf="showBin">
                   <i class="far fa-trash-alt" (click)="click(data._id)"></i>
                 </div>
-                <mat-card-title (click)="update()">{{data.name}}</mat-card-title>
+                <mat-card-title (click)="update(data._id)">{{data.name}}</mat-card-title>
                 <mat-card-subtitle>{{data.type}}</mat-card-subtitle>
               </mat-card-header>
               <img  (click)="functionON(data._id)" mat-card-image src={{data.imageurl}} alt="Photo of a Shiba Inu">
