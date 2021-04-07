@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UsersService } from "../../servises/users.service";
+import { UsersService } from "../../services/users.service";
 import { FormBuilder, Validators } from "@angular/forms";
 import Swal from 'sweetalert2';
 import { Router, RouterModule, Routes } from '@angular/router';

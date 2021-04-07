@@ -3,11 +3,20 @@ const bcrypt = require('bcrypt');
 const signupValidation = require('../auth.js');
 const jwt = require("jsonwebtoken");
 
+
+//FIND ALL USERS
+const FindAllUsers = async (req, res) => {
+    try{
+        const users = await UserModule.find({})
+        res.send(users)
+    }catch(err) {
+        res.send(err);
+    }
+}
+module.exports.FindAllUsers = FindAllUsers
+
 const createUser = async (req, res) => {
     //VALIDATE THE DATA
-    // const { error } = signupValidation(req.body);
-    // if (error) return res.send(error)
-    //CHECK IF THE USER IS ALREADY IN THE DATABASE   
      const emailExist = await UserModule.findOne({ email: req.body.email});
      if(emailExist) return res.send("Email already exist")
     //CREATE NEW USER

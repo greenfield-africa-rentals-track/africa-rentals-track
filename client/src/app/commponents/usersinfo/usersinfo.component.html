@@ -1,16 +1,35 @@
 <app-logoutnavbar></app-logoutnavbar>
-<div>
-    <ul>
-      <li class="post-list-entry">
-        <div class="post-list-entry-title">This is an example post title.</div>
-        <div class="post-list-entry-byline">Bob Loblaw 11/10/17 1:45pm</div>
-        <div class="stats-list-item-views">Views: 536</div>
-        <div class="post-list-entry-title">This is an example post title.</div>
-        <div class="post-list-entry-byline">Bob Loblaw 11/10/17 1:45pm</div>
-        <div class="stats-list-item-views">Views: 536</div>
-        <div class="post-list-entry-title">This is an example post title.</div>
-        <div class="post-list-entry-byline">Bob Loblaw 11/10/17 1:45pm</div>
-        <div class="stats-list-item-views">Views: 536</div>
-      </li>
-      </ul>
+<div class="content">
+  <div class="container">
+    <div class="row">
+    </div>
+    <div class="row" *ngFor="let data of users">
+      <div class="col-lg-4">
+        <div class="text-center card-box">
+          <div class="member-card pt-2 pb-2">
+            <div class="thumb-lg member-thumb mx-auto">
+              <img
+                src="https://image.flaticon.com/icons/png/512/206/206853.png"
+                class="rounded-circle img-thumbnail"
+                alt="profile-image"
+              />
+            </div>
+            <div class="">
+              
+                <h4>{{ data.firstName }} {{ data.lastName }} </h4>
+      
+              <div class="numEmail">
+                <p><i class="fas fa-phone fa-lg"></i>Phone number:</p>
+                <p class="text-muted"> {{ data.phoneNumber }} </p> 
+                <p class="text-pink"><i class="fas fa-envelope fa-lg"></i> Email: {{ data.email }}</p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="row"></div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+</div>
