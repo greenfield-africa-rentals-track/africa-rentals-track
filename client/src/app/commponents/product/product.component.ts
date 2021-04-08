@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
+
 import { ProductsService} from '../../services/products.service'
 import {ProductService} from '../../services/product.service';
 import Swal from 'sweetalert2'
+
+
+
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -33,11 +37,9 @@ export class ProductComponent implements OnInit {
     }
   }
 
-
-  
-   
   functionON(id:string){
     this.router.navigate(["/info/"+id])
+
   }
   getprod(){
     this.pdService.getProduct().subscribe((data)=>{
