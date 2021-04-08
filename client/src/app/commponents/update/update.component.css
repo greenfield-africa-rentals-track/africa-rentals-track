@@ -1,6 +1,6 @@
 .container1{
     width: 400px;
-    height: 0;
+    
     margin-left: 35%;
     border-radius: 3%;
   }
@@ -14,7 +14,8 @@
     height: 30px;
     margin-bottom: 15px;
     padding: 15px;
-    border-radius: 6px;
+    border-radius: 5px;
+    outline-color:#9ed2f7
     
   }
   .create-submit-button {
@@ -44,27 +45,45 @@
 
   }
   .card-product {
-    border: 1px solid;
-    border-color: grey;
-    max-width: 85em;
-    min-width: 265px;
-    max-height:350px;
-    min-height: 350px;
+    border: 0.5px;
+  
+    width: 30em;
+    height: 30%;
     cursor: pointer;
-    margin-top:200px ;
-    margin-left: 13em;
-    margin-bottom: 10em;
-    box-shadow: 0px 8px 6px 3px rgba(92, 90, 90, 0.75);
+    margin-left: 47.2em;
+    margin-bottom: 5%;
+    box-shadow: 0px 8px 6px 3px rgba(115, 113, 113, 0.25);
   }
   #card-image {
-    max-width: 500px;
-    min-width: 500px;
-    min-height: 360px;
-    max-height:300px ;
+    max-width: 150px;
+    min-width: 150px;
+    min-height: 150px;
+    max-height:150px ;
+    margin-top: 50%;
+    margin-right: 3%;
 
   }
   .card-body{
  display: inline-block;
-    margin-left: 16rem;
+    margin-left: 0.1rem;
     font-size: 25px;
+    padding: 13%;
+    margin-bottom:10.05%;
   }
+  .card-title{
+    font-weight: bold ! important;
+    font-size:25px;
+  }
+  .card-text{
+    margin-top: -7%;
+  }
+  
+  .text{
+   font-size: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+ 
+  }
+  p{
+    font-size: 12px ! important;
+  }
+ 
