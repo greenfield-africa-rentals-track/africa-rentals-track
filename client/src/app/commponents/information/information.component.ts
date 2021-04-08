@@ -14,7 +14,7 @@ import {ProductService} from '../../services/product.service';
 export class InformationComponent implements OnInit {
   products:any
   heroForm: FormGroup
-  constructor(private fb: FormBuilder,private objectService:InfoService,private router:Router,private route: ActivatedRoute,private pdService:ProductService) { 
+  constructor(private fb: FormBuilder,private objectService:InfoService,private router:Router,private route: ActivatedRoute,private Service:ProductService) { 
     this.heroForm = this.fb.group({
       Startdate: ['', Validators.compose([Validators.required, DateValidator.dateVaidator])],
       Enddate: ['', Validators.compose([Validators.required, DateValidator.dateVaidator])],
@@ -48,7 +48,7 @@ export class InformationComponent implements OnInit {
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute =(routeParams.get('id'));
     if(productIdFromRoute)
- this.pdService.getOneproduct(productIdFromRoute).subscribe((product)=>{
+ this.Service.getOneproduct(productIdFromRoute).subscribe((product)=>{
    this.products=product
    console.log(this.products,'my one pro')
  })

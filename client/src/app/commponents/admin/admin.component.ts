@@ -30,6 +30,7 @@ export class AdminComponent implements OnInit {
       this.objectService
       .addProduct(this.productForm.value)
       .subscribe(object =>{console.log(object)})
+      window.location.reload()
     }
   ngOnInit(): void {
     if(localStorage.admin===undefined){
