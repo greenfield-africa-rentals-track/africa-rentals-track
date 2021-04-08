@@ -19,9 +19,9 @@ export class UpdateComponent implements OnInit {
       price: [''],
     })
   }
-  updateonee(id:string){
+  updateonee(id:string,price:string){
     console.log(id,'jjjjjj')
-    this.pdService.updaeteone(this.changeorm.value).subscribe((data)=>{
+    this.pdService.updaeteone(id,this.changeorm.value).subscribe((data)=>{
       this.products=data
       console.log(this.products,'nnnnnnnnnnnnnnnnnnnnnnn')
        })
