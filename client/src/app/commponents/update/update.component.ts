@@ -14,13 +14,13 @@ export class UpdateComponent implements OnInit {
   myproducts:any
   products:any
   changeorm:FormGroup
-  constructor(private put: FormBuilder,private objectService:InfoService,private getone:ProductService,private router:Router,private route: ActivatedRoute,private pdService:ProductsService) { 
+  constructor(private put: FormBuilder,private objectService:InfoService,private getone:ProductService,private router:Router,private route: ActivatedRoute,private Service:ProductsService) { 
     this.changeorm = this.put.group({
       price: [''],
     })
   }
   updateonee(id:string,price:string){
-    this.pdService.updaeteone(id,this.changeorm.value).subscribe((data)=>{
+    this.Service.updaeteone(id,this.changeorm.value).subscribe((data)=>{
       this.products=data
       window.location.reload()
        })

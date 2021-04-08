@@ -1,41 +1,47 @@
 <div class="mynav">
+  <!--Navbar-->
+  <mdb-navbar
+    SideClass="navbar navbar-expand-lg navbar-dark "
+    [containerInside]="false"
+  >
+    <!-- Navbar brand -->
+    <mdb-navbar-brand
+      ><img
+        src="../../../assets/output.png"
+        class="img-fluid"
+        type="button" /><a class="navbar-brand" href="#"> </a
+    ></mdb-navbar-brand>
 
-    <!--Navbar-->
-    <mdb-navbar  SideClass="navbar navbar-expand-lg navbar-dark " [containerInside]="false" >
-    
-      <!-- Navbar brand -->
-      <mdb-navbar-brand><img  src="../../../assets/output.png" class="img-fluid" type="button" ><a class="navbar-brand" href="#"> </a></mdb-navbar-brand>
-    
-      <!-- Collapsible content -->
-      <links>
-    
-        <!-- Links -->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ">
-       
-            <a class="nav-link link1 waves-light" mdbWavesEffect (click)="rediractto()"> <b><h2>Admin-dashboard</h2></b><span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item" >
+    <!-- Collapsible content -->
+    <links>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link link1 waves-light"
+            mdbWavesEffect
+            (click)="rediractto()"
+          >
+            <b><h2>Admin-dashboard</h2></b
+            ><span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link2 waves-light"
+            mdbWavesEffect
+            (click)="logout()"
+            ><b><h2>LogOut</h2></b>
+          </a>
+        </li>
+      </ul>
 
-            <a class="nav-link link2 waves-light" mdbWavesEffect (click)="logout()"><b><h2>LogOut</h2></b> </a>
+      <!-- Links -->
+    </links>
+    <!-- Collapsible content -->
+  </mdb-navbar>
+  <!--/.Navbar-->
+  <app-search></app-search>
+</div>
 
-          </li>
-    
-       
-    
-        </ul>
-        
-        <!-- Links -->
-      </links>
-      <!-- Collapsible content -->
-    
-      
-    </mdb-navbar>
-    <!--/.Navbar--> 
-    <app-search></app-search>
-    
-    
-    </div>
-    
-    <app-card-product></app-card-product>
-    
+<app-card-product></app-card-product>
