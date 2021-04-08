@@ -16,17 +16,20 @@ export class SearchComponent implements OnInit {
   getprod(){
     this.pdService.getProduct().subscribe((data)=>{
       this.data = data
-      console.log(data,"pxamachekl")
-     
     })
   }
   transform(): any{     
     if(!this.data) {
         return  [];
     }
+
+    
+   var xx= this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
+
     this.pdService.searchString=this.searchedString.toLowerCase()
    this.pdService.searchResult = this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
    console.log("xxx",this.pdService.searchResult )
+
  }
 
   ngOnInit(): void {
