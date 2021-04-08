@@ -13,20 +13,11 @@ import Swal from 'sweetalert2'
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-
-
-
   deleteProd: any
-
   mydata: any=[];
-
   searchString:string=this.chService.searchString
-
-
-  
-
   showBin = false;
-  constructor(private router:Router ,private chService:ProductService,private serv:ProductsService) { }
+  constructor(private router:Router ,private chService:ProductService,private serv:ProductsService,private pdService:ProductsService) { }
   
   click(id:string){
  this.serv.deleteProduct(id).subscribe((pro)=>{
@@ -54,8 +45,6 @@ export class ProductComponent implements OnInit {
   getprod(){
     this.chService.getProduct().subscribe((data:any)=>{
       this.mydata = data
-
-
       this.chService.searchResult=data
       console.log(data,"pxamachekl")
 
@@ -70,10 +59,7 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.getprod()
-
     this.chService.obs().subscribe(data=>{this.searchString=data,console.log("darrrr",data)})
-    console.log("result search",this.chService.searchResult)
-
     this.showbnin()
 
   }
