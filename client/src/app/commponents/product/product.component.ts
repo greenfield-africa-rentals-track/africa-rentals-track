@@ -1,21 +1,40 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
+
+import { ProductsService} from '../../services/products.service'
+
 import {ProductService} from '../../services/product.service';
+
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
+  deleteProd: any
   mydata: any=[];
 
-  constructor(private router:Router ,private pdService:ProductService) { }
+  showBin = false;
+  constructor(private router:Router ,private pdService:ProductService,private serv:ProductsService) { }
+  
+  click(id:string){
+ this.serv.deleteProduct(id).subscribe((pro)=>{
+   this.deleteProd=pro
+  })
+}
+  showbnin(){
+    if(localStorage.admin){
+      this.showBin = true
+    }
+  }
+
    
   functionON(id:string){
     
     console.log(id)
     this.router.navigate(["/info/"+id])
    
+
     
   }
   getprod(){
@@ -34,6 +53,7 @@ export class ProductComponent implements OnInit {
 
   ngOnInit(): void {
     this.getprod()
+    this.showbnin()
   }
 
 }
