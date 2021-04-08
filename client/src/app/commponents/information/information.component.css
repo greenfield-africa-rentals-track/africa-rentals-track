@@ -1,73 +1,107 @@
 @media screen and (min-width: 900px) {
-  article {
-    padding: 1rem 3rem;
-  }
+    article {
+      padding: 1rem 3rem;
+    }
 
   .card-product {
-    border: 1px solid;
+    
     border-color: grey;
     max-width: 85em;
-    min-width: 265px;
-    max-height: 350px;
+    min-width: 300px;
+    max-height:350px;
     min-height: 350px;
-    cursor: pointer;
-    margin-top: 60px;
+    margin-top:60px ;
     margin-left: 13em;
     margin-bottom: 10em;
-    box-shadow: 0px 8px 6px 3px rgba(92, 90, 90, 0.75);
+    box-shadow: 0px 4px 3px 1px rgba(92, 90, 90, 0.2);
   }
   #card-image {
-    max-width: 500px;
-    min-width: 500px;
-    min-height: 360px;
-    max-height: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    min-height: 300px;
+    max-height:300px;
+    margin-left:20%;
+    margin-top: 20%;
+
   }
-  .card-body {
-    display: inline-block;
+  .card-body{
+ 
     margin-left: 16rem;
   }
-  .form-control {
-    display: flex;
-    width: 20em;
-    height: 3em;
-    margin-left: 20px;
+  .form-control{
+    
+    width: 12em;
+    height: 3.3em;
+    border-radius: 5%;
+  
   }
-  .center-block {
+  .control2{
+    margin-top: -4.5%;
+  }
+  .center-block{
     display: inline-block;
     margin-left: 20px;
     margin-top: 3em;
   }
-  .quantity-more {
+  .quantity-more{
     color: #414850;
     background: #f9f9f9;
     padding: 1px 6px;
   }
 
-  #quantity-input {
+  #quantity-input{
     background-color: #ffffff;
     border-color: #dde0e2;
-    border-radius: 4px;
+    border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    color: black;
+    color:black;
     font-family: Helvetica Neue;
     font-size: 14px;
-    gap: normal;
-    line-height: 21px;
-    margin: 0px 8px;
+    gap:normal;
+    margin-left:29%;
+    margin-bottom: 3%;
     text-align: center;
+    width:15%;
+    height: 30px;
+    outline-color:#9ed2f7;
+    outline-width: 20px ! important;
+    outline-offset:1px
+    
+
   }
-  .quantity {
-    margin-left: 10em;
-    margin-top: 2em;
+  .quantity{
+   margin-left: -16em;
+   margin-top: 0.1em;
   }
-  .quantity-less {
+  .quantity-less{
     color: #414850;
     background: #f9f9f9;
     padding: 1px 6px;
     /* cursor: pointer; */
   }
-  .block {
-    margin-left: 220px;
-  }
+
+ .block1{
+  margin-left: 19px;
+  margin-top: 2%;
+  
+ }
+ .mysubmit{
+   margin-left: 1.7em;
+   margin-top: -1.5%;
+   width: 20%;
+   border-radius: 3px;
+   font-size: 12px
+ }
+ .card-title{
+   font-weight: bold ! important;
+   font-size:25px;
+ }
+ .text{
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+
+ }
+ 
+ 
 }

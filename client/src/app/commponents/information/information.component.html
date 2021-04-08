@@ -3,60 +3,40 @@
   <div class="card mb-8">
     <div class="row no-gutters">
       <div class="col-md-4">
-
-        <img
-          id="card-image"
-          src="{{ products[0].imageurl }}"
-          class="card-img"
-          alt="..."
-        />
+        <img id="card-image" src={{products[0].imageurl}} class="card-img" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">{{ products[0].name }}</h5>
-          <p class="card-text">{{ products[0].description }}</p>
-          <p class="card-text">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </p>
+          <h5 class="card-title">{{products[0].name}}</h5>
+          <h5 class="card-title">{{products[0].price}}</h5>
+          <p class="text">{{products[0].description}}</p>
+          <p class="text1"><small class="text-muted">Last updated 3 mins ago</small></p>
           <form [formGroup]="heroForm">
             <div class="form-group">
-              <label class="center-block"
-                >Start Date
-                <input class="form-control" formControlName="Startdate" />
+              <label class="center-block">Start Date :
+                <input class="form-control control1" formControlName="Startdate" placeholder="DD/MM/YYYY">
               </label>
-              <label class="center-block"
-                >End Date
-                <input class="form-control" formControlName="Enddate" />
+              <div class="control2">
+              <label class="center-block">End Date :
+                <input class="form-control" formControlName="Enddate" placeholder="DD/MM/YYYY">
               </label>
-
+          </div>
+          <label class="block1">Quantity :</label>
               <div class="quantity">
-                <button aria-label="Less" tabindex="0" class="quantity-less">
-                  -
-                </button>
-
-                <input
-                  type="tel"
-                  id="quantity-input"
-                  min="1"
-                  max="9999"
-                  autocomplete="off"
-                  formControlName="quantity"
-                />
-
-                <button aria-label="More" tabindex="0" class="quantity-more">
-                  +
-                </button>
-              </div>
-              <label class="block">Quantity</label>
+                <input type="tel" id="quantity-input" min="1" max="9999" autocomplete="off" formControlName="quantity">
+              
             </div>
-
-            <button type="submit" class="mysubmit" (click)="submit()">
-              submit
-            </button>
+              
+        
+            <button type="button" class="btn btn-success mysubmit" (click)="submit()"><b>Save</b></button>
+    </div>
           </form>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
