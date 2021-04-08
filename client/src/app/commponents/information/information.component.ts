@@ -12,15 +12,9 @@ import { ProductService } from '../../services/product.service';
   styleUrls: ['./information.component.css'],
 })
 export class InformationComponent implements OnInit {
-  products: any;
-  heroForm: FormGroup;
-  constructor(
-    private fb: FormBuilder,
-    private objectService: InfoService,
-    private router: Router,
-    private route: ActivatedRoute,
-    private pdService: ProductService
-  ) {
+  products:any
+  heroForm: FormGroup
+  constructor(private fb: FormBuilder,private objectService:InfoService,private router:Router,private route: ActivatedRoute,private Service:ProductService) { 
     this.heroForm = this.fb.group({
       Startdate: [
         '',
@@ -56,10 +50,11 @@ export class InformationComponent implements OnInit {
       this.router.navigate(['profil', 'info']);
     }
     const routeParams = this.route.snapshot.paramMap;
-    const productIdFromRoute = routeParams.get('id');
-    if (productIdFromRoute)
-      this.pdService.getOneproduct(productIdFromRoute).subscribe((product) => {
-        this.products = product;
-      });
+    const productIdFromRoute =(routeParams.get('id'));
+    if(productIdFromRoute)
+ this.Service.getOneproduct(productIdFromRoute).subscribe((product)=>{
+   this.products=product
+   console.log(this.products,'my one pro')
+ })
   }
 }

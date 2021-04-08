@@ -1,31 +1,12 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 .example-card {
-   
-   
-    /* top:100px; */
-    
     cursor: pointer;
     max-width:  1000px;
     box-shadow: 3px 3px 3px 3px rgba(92, 90, 90, 0.4) !important;
-    /* margin-top:10em */
+
   }
 
-  /* .h2{
-    font-weight: 700;
-    margin-bottom: 0;
-    margin-top: 0;
-    font-size: 2.5714285714rem;;
-    line-height: 1.11;
-  }
-  .h1{
-    font-weight: 700;
-    
-    margin-top: 0;
-    font-size: 1rem;
-    line-height: 1.43;
-    color:darkorange;
-    top:-50px;
-  } */
+  
 
   h4{
     margin-bottom: 0.03%;
@@ -41,18 +22,13 @@
     
   }
   .col-sm{
-    /* margin-top:-8%; */
-    /* height:2000px; */
-    /* margin-top:1em; */
     max-width: 300px;
     padding: 10px;
     display: inline-block;
-    margin-left: 2.3%;
+    margin-left: 2.2%;
     margin-top:30px;
   }
-  /* .row{
-    margin-top:5%;
-  } */
+ 
   .text{
     margin-left:3.5%;
   }

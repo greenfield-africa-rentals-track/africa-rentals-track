@@ -11,8 +11,6 @@ export class FilterPipe implements PipeTransform {
   transform(value: any, input: any): any {
     var x;
     if (input) {
-    // return value.filter((val:any) => val.indexOf(input)) >= 0; 
-    
     x= value.filter((x:any) =>x.name.toLowerCase().includes(input.toLowerCase()))
     } else {
       x= value;

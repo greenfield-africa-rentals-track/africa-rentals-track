@@ -1,10 +1,7 @@
-
-
- 
-  <form class="example" action="/action_page.php" style="max-width:300px" >
-    <input  type="text" (change)="transform()" placeholder="🔍   Search for Equipment..." name="search2" [(ngModel)]="searchedString"   >
-    <button  type="submit" (click)="transform()">Search</button>
-  </form>   
+<form class="example" action="/action_page.php" style="max-width:300px" >
+  <input  type="text" placeholder="🔍   Search for Equipment..." name="search2" [ngModel]="searchedString"   >
+  <button  type="submit" (click)="transform()">Search</button>
+</form>   
 <div class="backgbox">
   <img src="../../../assets/banner1.jpg" class="nav-image">
 <p class="backg-text">The Nation's Largest Equipment Rental Network </p>

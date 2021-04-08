@@ -12,9 +12,9 @@ export class SearchComponent implements OnInit {
   data: any=[];
   searchedString:string="";
   
-  constructor(private pdService:ProductService) { }
+  constructor(private chService:ProductService) { }
   getprod(){
-    this.pdService.getProduct().subscribe((data)=>{
+    this.chService.getProduct().subscribe((data)=>{
       this.data = data
     })
   }
@@ -26,9 +26,9 @@ export class SearchComponent implements OnInit {
     
    var xx= this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
 
-    this.pdService.searchString=this.searchedString.toLowerCase()
-   this.pdService.searchResult = this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
-   console.log("xxx",this.pdService.searchResult )
+    this.chService.searchString=this.searchedString.toLowerCase()
+   this.chService.searchResult = this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
+   console.log("xxx",this.chService.searchResult )
 
  }
 

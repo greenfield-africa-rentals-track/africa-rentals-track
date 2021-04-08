@@ -10,7 +10,6 @@ export class ProductsService {
     return this.http.post("http://localhost:3000/api/trucksy/products",object)
   }
   deleteProduct( id:string ){
-
     return this.http.delete("http://localhost:3000/adminlogins/" + id)
   }
   updaeteone( id:string,price:string ){
