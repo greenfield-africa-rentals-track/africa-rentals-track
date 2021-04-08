@@ -50,7 +50,6 @@ export class InformationComponent implements OnInit {
     if(productIdFromRoute)
  this.pdService.getOneproduct(productIdFromRoute).subscribe((product)=>{
    this.products=product
-   console.log(this.products,'my one pro')
  })
   }
   

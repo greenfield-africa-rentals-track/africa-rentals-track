@@ -20,7 +20,7 @@
                 <mat-card-subtitle>{{data.type}}</mat-card-subtitle>
               </mat-card-header>
               <img  (click)="functionON(data._id)" mat-card-image src={{data.imageurl}} alt="Photo of a Shiba Inu">
-              <mat-card-subtitle>{{data.price}}</mat-card-subtitle>
+              <mat-card-subtitle>{{data.price}} /day</mat-card-subtitle>
               <mat-card-content>
                 <p>
                  {{data.description.slice(0,data.description.indexOf('.')) +' ...'}}

@@ -18,7 +18,7 @@ export class ProductComponent implements OnInit {
  this.serv.deleteProduct(id).subscribe((pro)=>{
   Swal.fire({
     icon: 'success',
-    title: 'Your work has been saved',
+    title: 'Product is deleted successfully',
     showConfirmButton: false,
     timer: 1500
   })
@@ -37,17 +37,11 @@ export class ProductComponent implements OnInit {
   
    
   functionON(id:string){
-    
-    console.log(id)
     this.router.navigate(["/info/"+id])
-   
-    
   }
   getprod(){
     this.pdService.getProduct().subscribe((data)=>{
       this.mydata = data
-      console.log(data,"pxamachekl")
-     
     })
   }
   update(){

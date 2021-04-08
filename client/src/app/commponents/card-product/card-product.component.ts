@@ -26,16 +26,6 @@ export class CardProductComponent implements OnInit {
     this.router.navigate(["/info"])
     
   }
-  // getcardprod(){
-    
-  //   this.cartService.getcardProduct().subscribe((data)=>{
-  //     this.dataList = data
-  //     console.log(data,"hello")
-      
-     
-  //   })
-  
- 
   ngOnInit(): void {
     
   }
