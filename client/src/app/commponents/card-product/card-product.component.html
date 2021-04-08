@@ -1,23 +1,20 @@
- <div class="carousel-container">
- <h4><b>EQUIPMENT</b></h4>
- <h2><b>Popular Equipment and Tools for Rent</b></h2>
-  <carousel class="myCarousel" [cellsToShow]=4 [height]=380 >
-    
-    <div class="carousel-cell" *ngFor="let data of dataList" >
-      <div class="card" >
-        
-        
+<div class="carousel-container">
+  <h4><b>EQUIPMENT</b></h4>
+  <h2><b>Popular Equipment and Tools for Rent</b></h2>
+  <carousel class="myCarousel" [cellsToShow]="4" [height]="380">
+    <div class="carousel-cell" *ngFor="let data of dataList">
+      <div class="card">
         <div class="card-body" (click)="functionON()">
-          <p class="card-title"><b></b>{{data.name}}</p>
-          
-          
-          
-          
-          <img class="card-img-top" alt="Card image cap" src={{data.image}} >
+          <p class="card-title"><b></b>{{ data.name }}</p>
+
+          <img
+            class="card-img-top"
+            alt="Card image cap"
+            src="{{ data.image }}"
+          />
         </div>
-       
-      </div></div>
- 
-</carousel>
+      </div>
+    </div>
+  </carousel>
 </div>
 <app-product></app-product>

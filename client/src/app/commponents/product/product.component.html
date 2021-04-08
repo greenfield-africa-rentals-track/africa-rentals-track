@@ -1,11 +1,11 @@
 
     <div class="container" (submit)="showbnin()">
+
       <div class="text">
       <h4><b>EQUIPMENT</b></h4>
  <h2><b>Quality equipment, ready to go</b></h2>
       </div>
-         
-        <div class="row" >
+       
           
           <div class="col-sm" *ngFor="let data of mydata" >
             
@@ -21,17 +21,21 @@
                 <mat-card-subtitle>{{data.type}}</mat-card-subtitle>
               </mat-card-header>
               <img  (click)="functionON(data._id)" mat-card-image src={{data.imageurl}} alt="Photo of a Shiba Inu">
-              <mat-card-subtitle>{{data.price}}</mat-card-subtitle>
+              <mat-card-subtitle>{{data.price}} /day</mat-card-subtitle>
               <mat-card-content>
                 <p>
-                 {{data.description.slice(0,data.description.indexOf('.')) +' ...'}}
+                 {{data.description.slice(0,50) +' ...'}}
                 </p>
               </mat-card-content>
               <mat-card-content class="md-padding" layout-xs="column" layout="row"></mat-card-content>
             </mat-card>     
           </div>      
+
+        
+
         </div>
       </div>
+
                     
       
       

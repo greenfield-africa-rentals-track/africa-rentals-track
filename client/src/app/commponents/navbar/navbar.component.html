@@ -1,40 +1,57 @@
-
 <div class="mynav">
+  <!--Navbar-->
+  <mdb-navbar
+    SideClass="navbar navbar-expand-lg navbar-dark "
+    [containerInside]="false"
+  >
+    <!-- Navbar brand -->
+    <mdb-navbar-brand
+      ><img
+        src="../../../assets/output.png"
+        class="img-fluid"
+        type="button"
+        (click)="goToHome()" /><a class="navbar-brand" href="#"> </a
+    ></mdb-navbar-brand>
 
-<!--Navbar-->
-<mdb-navbar  SideClass="navbar navbar-expand-lg navbar-dark " [containerInside]="false" >
+    <!-- Collapsible content -->
+    <links>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link link1 waves-light"
+            mdbWavesEffect
+            (click)="goToHome()"
+          >
+            <b><h2>Home</h2></b><span class="sr-only">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link link2 waves-light"
+            mdbWavesEffect
+            routerLink="/Signup"
+            (click)="rediractto()"
+            ><b><h2>Signup</h2></b>
+          </a>
+        </li>
 
-  <!-- Navbar brand -->
-  <mdb-navbar-brand><img  src="../../../assets/output.png" class="img-fluid" type="button" (click)="goToHome()"><a class="navbar-brand" href="#"> </a></mdb-navbar-brand>
+        <!-- Dropdown -->
+        <li class="nav-item">
+          <a
+            class="nav-link link3 waves-light"
+            mdbWavesEffect
+            routerLink="/signin"
+            ><b><h2>Signin</h2></b></a
+          >
+        </li>
+      </ul>
 
-  <!-- Collapsible content -->
-  <links>
-
-    <!-- Links -->
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item ">
-        <a class="nav-link link1 waves-light" mdbWavesEffect (click)="goToHome()"> <b><h2>Home</h2></b><span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item" >
-        <a class="nav-link link2 waves-light" mdbWavesEffect routerLink="/Signup" (click)="rediractto()"><b><h2>Signup</h2></b> </a>
-      </li>
-
-      <!-- Dropdown -->
-      <li class="nav-item">
-        <a class="nav-link link3 waves-light" mdbWavesEffect routerLink="/signin"><b><h2>Signin</h2></b></a>
-      </li>
-
-    </ul>
-    
-    <!-- Links -->
-  </links>
-  <!-- Collapsible content -->
-
-  
-</mdb-navbar>
-<!--/.Navbar--> 
-<app-search></app-search>
-
-
+      <!-- Links -->
+    </links>
+    <!-- Collapsible content -->
+  </mdb-navbar>
+  <!--/.Navbar-->
+  <app-search></app-search>
 </div>
 <app-card-product></app-card-product>

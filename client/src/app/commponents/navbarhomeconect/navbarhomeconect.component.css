@@ -1,34 +1,29 @@
-
 @media screen and (min-width: 900px) {
-    .example-spacer {
-      flex: 1 1 auto;
-    }
   .example-spacer {
     flex: 1 1 auto;
   }
-  .nav-link{
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .nav-link {
     font-size: 18px;
-  
-  }  
-  .img-fluid{
+  }
+  .img-fluid {
     width: 18%;
-    height:auto;
-    border-radius:15%;
-    
-  } 
-  .link1{
+    height: auto;
+    border-radius: 15%;
+  }
+  .link1 {
     cursor: pointer;
     /* margin-left: -60%; */
-  
   }
-  
-  .mynav{
+
+  .mynav {
     background-image: url("../../../assets/banner.jpg");
     background-attachment: cover;
   }
-  }
-  h2{
-    font-family: 'Kiwi Maru', serif;
-    font-size:18px;
-  }
-  
+}
+h2 {
+  font-family: "Kiwi Maru", serif;
+  font-size: 18px;
+}
