@@ -18,8 +18,6 @@ module.exports={
            })
     },
     delete:(req,res)=>{
-        console.log("delete", req.params.id)
-        
         product.remove({_id:  req.params.id},(err,results)=>{
             if(err){
                 res.send(err)
@@ -27,6 +25,9 @@ module.exports={
             }
         })
     },
+
+
+
 
     update: (req, res) => {
         if (!req.body) {
@@ -52,6 +53,7 @@ module.exports={
             });
           });
       }
+
 
 }
 

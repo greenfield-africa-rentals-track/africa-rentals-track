@@ -30,7 +30,6 @@ const createUser = async (req, res) => {
     try {
         const saveUser = await newUser.save();
         res.send(saveUser);
-        console.log("success");
     }catch(err){
         res.send(err)
     }
@@ -50,21 +49,17 @@ const findUser = async (req, res) => {
         
         if (!user) {
             res.send("User not found");
-            console.log("User not found");
         }
         if(await bcrypt.compare(req.body.password, user.password)){
             const token = jwt.sign({_id: user._id}, "zeruiopmlkjhgvcxwcvwdf")
             res.set("auth-token", token)
             res.send({message: "Connected successfully", token: token})
-            console.log("Connected successfully");
         }else{
             res.send("Email or password incorrect")
-            console.log("Email or password incorrect");
         }
     }
     catch(err){
       res.send(err, "could not connect")
-      console.log(err, "could not connect");
     }
     }   
 }

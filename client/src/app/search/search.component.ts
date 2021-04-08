@@ -12,21 +12,24 @@ export class SearchComponent implements OnInit {
   data: any=[];
   searchedString:string="";
   
-  constructor(private pdService:ProductService) { }
+  constructor(private chService:ProductService) { }
   getprod(){
-    this.pdService.getProduct().subscribe((data)=>{
+    this.chService.getProduct().subscribe((data)=>{
       this.data = data
-      console.log(data,"pxamachekl")
-     
     })
   }
   transform(): any{     
     if(!this.data) {
         return  [];
     }
-    this.pdService.searchString=this.searchedString.toLowerCase()
-   this.pdService.searchResult = this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
-   console.log("xxx",this.pdService.searchResult )
+
+    
+   var xx= this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
+
+    this.chService.searchString=this.searchedString.toLowerCase()
+   this.chService.searchResult = this.data.filter((x:any) =>x.name.toLowerCase().includes(this.searchedString.toLowerCase()) )
+   console.log("xxx",this.chService.searchResult )
+
  }
 
   ngOnInit(): void {
