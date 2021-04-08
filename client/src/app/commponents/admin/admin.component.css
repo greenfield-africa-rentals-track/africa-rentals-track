@@ -1,19 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Francois+One|PT+Serif:400,400i,700,700i');
+@import url("https://fonts.googleapis.com/css?family=Francois+One|PT+Serif:400,400i,700,700i");
 
 body {
-  font-family: 'PT Serif', sans-serif;
+  font-family: "PT Serif", sans-serif;
   margin: 0px;
   color: #000000;
   background-color: #fcfcfcf8;
   font-size: 1.1em;
 }
 
-
-
-
 .feed-list-item-title {
-  font-size: 1.8em;   
-  font-family: 'Francois One';
+  font-size: 1.8em;
+  font-family: "Francois One";
   margin-bottom: 10px;
 }
 
@@ -23,7 +20,7 @@ body {
 }
 
 .feed-list-item-byline {
-  font-size: .8em;
+  font-size: 0.8em;
   margin-bottom: 15px;
   color: #777777;
 }
@@ -37,74 +34,51 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 3px;
-  font-family: 'PT Serif', sans-serif;
-  color: #ECF0F1;
-  background-color:	#32CD32;
+  font-family: "PT Serif", sans-serif;
+  color: #ecf0f1;
+  background-color: #32cd32;
   width: 80%;
   padding: 10px;
 }
 
-
 .create h2 {
   width: 90%;
-  font-family: 'Francois One';
-  color:#1c8adb;
+  font-family: "Francois One";
+  color: #1c8adb;
   text-align: center;
   font-size: 22px;
-  margin-left: -5%
+  margin-left: -5%;
 }
 
 .create-editor {
   display: block;
 }
 
-
-
 .create-input {
   width: 80%;
   display: block;
-  font-size: .9em;
+  font-size: 0.9em;
   height: 30px;
   margin-bottom: 15px;
   border: groove;
   padding: 15px;
   border-radius: 3px;
-  
 }
 
 .create-body-textarea {
   width: 80%;
-  font-size: .9em;
+  font-size: 0.9em;
   display: block;
   height: 330px;
   border: groove;
   padding: 5px;
   resize: none;
 }
-.container1{
+.container1 {
   width: 700px;
   height: 615px;
   margin-left: 25%;
-  
 }
-.create{
-  margin-left: 15%
+.create {
+  margin-left: 15%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

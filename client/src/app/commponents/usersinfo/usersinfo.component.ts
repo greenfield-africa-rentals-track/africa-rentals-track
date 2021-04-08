@@ -12,7 +12,6 @@ export class UsersinfoComponent implements OnInit {
   AllUsers(){
     this.userService.getusers().subscribe((data) => {
       this.users = data
-      console.log(data,"heyyyyyyy");
     })
   }
   ngOnInit(): void {

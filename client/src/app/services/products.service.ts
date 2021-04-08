@@ -13,4 +13,7 @@ export class ProductsService {
 
     return this.http.delete("http://localhost:3000/adminlogins/" + id)
   }
+  updaeteone( id:string,price:string ){
+    return this.http.put("http://localhost:3000/adminlogins/" + id,price)
+  }
 }
