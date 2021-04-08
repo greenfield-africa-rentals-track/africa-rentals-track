@@ -1,13 +1,13 @@
-<app-logoutnavbar></app-logoutnavbar>
+<!-- <app-logoutnavbar></app-logoutnavbar> -->
 <h2>Edit Product</h2>
 <div class="container1">
 <div class="create">
 	<div class="create-editor">
-	  <form >
+	  <form [formGroup]="changeorm">
 		<label> Price :</label>
-		<input class="create-input" type="text" />
+		<input class="create-input" type="text"  formControlName="price">
 
-		<button class="create-submit-button" type="submit"><b class="edit">EDIT</b></button>
+		<button class="create-submit-button" type="submit" (click)="updateonee(myproducts[0]._id,myproducts.price)"><b class="edit">EDIT</b></button>
 	</form>
 </div>
 </div>
@@ -17,12 +17,13 @@
 	<div class="card mb-8">
 	  <div class="row no-gutters">
 		<div class="col-md-4">
-		  <img id="card-image" src={{products[0].imageurl}} class="card-img" alt="...">
+		  <img id="card-image" src={{myproducts[0].imageurl}} class="card-img" alt="...">
 		</div>
 		<div class="col-md-8">
 		  <div class="card-body">
-			<h5 class="card-title">{{products[0].name}}</h5>
-			<p class="card-text">{{products[0].description}}</p>
+			<h5 class="card-title">{{myproducts[0].name}}</h5>
+			<h5 class="card-title">{{myproducts[0].price}}</h5>
+			<p class="card-text">{{myproducts[0].description}}</p>
 			<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 		
 		  </div>

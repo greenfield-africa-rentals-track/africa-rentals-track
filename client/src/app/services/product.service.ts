@@ -16,6 +16,7 @@ searchString:string=""
     return this.http.get("http://localhost:3000/api/trucksy/products/"+id);
 
   }
+
   obs(): Observable<string>{
     const mystr= of(this.searchString)
     console.log("observable",mystr)
