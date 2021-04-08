@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Pipe, PipeTransform} from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 import { Router, RouterModule, Routes } from '@angular/router';
 @Component({
   selector: 'app-navbar',
@@ -7,16 +7,12 @@ import { Router, RouterModule, Routes } from '@angular/router';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-
-  constructor(private router:Router) { }
+  constructor(private router: Router) {}
   rediractto() {
-    this.router.navigate(["/Signup"])
-    
+    this.router.navigate(['/Signup']);
   }
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  goToHome() {
+    this.router.navigate(['']);
   }
-goToHome(){
-  this.router.navigate([""])
 }
-}
-
